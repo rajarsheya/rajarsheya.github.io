@@ -110,7 +110,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: grey;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -139,7 +139,7 @@ img {
 }
 .nav__link {
   position: relative;
-  color: #fff;
+  color: white;
 }
 .nav__link:hover {
   position: relative;
