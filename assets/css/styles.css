@@ -308,7 +308,7 @@ img {
 
 /* ===== WORK =====*/
 .work__container {
-  row-gap: 2rem;
+  row-gap: 1rem;
 }
 .work__img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
@@ -320,6 +320,11 @@ img {
 }
 .work__img img:hover {
   transform: scale(1.1);
+}
+
+/* ===== ACHIEVEMENT =====*/
+.achievement__img {
+  justify-self: center;
 }
 
 /* ===== CONTACT =====*/
