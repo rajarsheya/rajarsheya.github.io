@@ -258,120 +258,59 @@ img {
 .skills__subtitle {
   margin-bottom: var(--mb-2);
 }
-.skills__text {
-  margin-bottom: var(--mb-4);
-}
-.skills__data {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  font-weight: var(--font-semi);
-  padding: 0.5rem 1rem;
-  margin-bottom: var(--mb-4);
-  border-radius: 0.5rem;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-}
-.skills__icon {
-  font-size: 2rem;
-  margin-right: var(--mb-2);
-  color: var(--first-color);
-}
-.skills__names {
-  display: flex;
-  align-items: center;
-}
-.skills__bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  height: 0.25rem;
-  border-radius: 0.5rem;
-  z-index: var(--z-back);
-}
-.skills__html {
-  width: 95%;
-}
-.skills__css {
-  width: 85%;
-}
-.skills__js {
-  width: 65%;
-}
-.skills__ux {
-  width: 85%;
-}
-.skills__img {
-  border-radius: 0.5rem;
+/* Skills Section Styles */
+#skills {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-button {
-  background-color: #4CAF50;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.dropdown-button:hover {
-  background-color: #3e8e41;
-}
-
-.dropdown-content {
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  display: none;
-}
-
-.dropdown-content li {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
-
-.dropdown-content li:last-child {
-  border-bottom: none;
-}
-
-.dropdown-content li a {
+#skills h2 {
+  margin-top: 0;
+  font-weight: bold;
   color: #333;
-  text-decoration: none;
 }
 
-.dropdown-content li a:hover {
-  background-color: #f0f0f0;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.skill-category {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown:hover .dropdown-button {
-  background-color: #3e8e41;
+.skill-category h3 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #666;
 }
 
-/* Optional animation */
-.dropdown-content {
-  transition: opacity 0.5s;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.dropdown:hover .dropdown-content {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+.skill-category li {
+  margin-bottom: 10px;
 }
+
+.skill-category li:before {
+  content: "\2022";
+  font-size: 18px;
+  color: #666;
+  margin-right: 10px;
+}
+
+
 
 /* ===== WORK =====*/
 .work__container {
