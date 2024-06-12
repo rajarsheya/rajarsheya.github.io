@@ -110,7 +110,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: grey;
+  background-color:white;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -323,8 +323,8 @@ img {
 }
 
 /* ===== ACHIEVEMENT =====*/
-.achievement__img {
-  justify-self: center;
+.achievement_img {
+  flex-wrap: wrap;
 }
 
 /* ===== CONTACT =====*/
