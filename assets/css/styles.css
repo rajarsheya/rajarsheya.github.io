@@ -178,6 +178,19 @@ img {
   right: 0;
 }
 
+/*===== VG Link =====*/
+.vaccine-genie-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.vaccine-genie-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
 /*===== HOME =====*/
 .home {
   position: relative;
@@ -275,7 +288,7 @@ img {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
 
@@ -364,17 +377,52 @@ video {
   margin-top: 10px;
 }
 
-.work__link {
+.contributors {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.contributors h4 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.contributors ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contributors ul li {
   display: inline-block;
-  margin-top: 10px;
+  margin: 5px;
+}
+
+.contributors ul li a {
   text-decoration: none;
-  font-weight: bold;
   color: #007bff;
+  font-weight: 500;
   transition: color 0.3s ease-in-out;
 }
 
-.work__link:hover {
+.contributors ul li a:hover {
   color: #0056b3;
+}
+
+.github-link {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.github-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.github-link:hover .github-icon {
+  transform: scale(1.1);
 }
 
 /* ===== ACHIEVEMENT =====*/
