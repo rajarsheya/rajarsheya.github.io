@@ -268,9 +268,11 @@ img {
   row-gap: 2rem;
   text-align: center;
 }
+
 .skills__subtitle {
   margin-bottom: var(--mb-2);
 }
+
 /* Skills Section Styles */
 #skills {
   background-color: #f7f7f7;
@@ -278,6 +280,8 @@ img {
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  overflow: hidden;
 }
 
 #skills h2 {
@@ -286,25 +290,24 @@ img {
   color: #333;
 }
 
+/* Adjusting Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  /* Adjusts based on screen size */
-  grid-gap: 20px;
-  overflow-x: auto;
-  /* Allows horizontal scrolling if needed */
-  white-space: nowrap;
-  /* Prevents wrapping */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Adjusts dynamically */
+  gap: 20px;
   padding-bottom: 10px;
-  /* Extra space for scrollbar */
 }
 
+/* Individual Skill Category */
 .skill-category {
   background-color: #fff;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  min-width: 250px; /* Ensures enough width for content */
 }
 
 .skill-category h3 {
@@ -321,10 +324,12 @@ img {
 
 .skill-category li {
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .skill-category li:before {
-  content: "\2022";
+  content: "•";
   font-size: 18px;
   color: #666;
   margin-right: 10px;
