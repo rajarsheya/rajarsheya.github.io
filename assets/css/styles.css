@@ -329,7 +329,15 @@ img {
 }
 
 /* ===== ACHIEVEMENT =====*/
-
+.achievementlist {
+  display: flex;
+    flex-direction: column;
+    /* Stack achievements vertically */
+    gap: 10px;
+    /* Add spacing between items */
+    padding: 0;
+    list-style: none;
+}
 
 /* ===== CONTACT =====*/
 .contact__input {
