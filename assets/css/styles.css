@@ -288,8 +288,15 @@ img {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* Adjusts based on screen size */
   grid-gap: 20px;
+  overflow-x: auto;
+  /* Allows horizontal scrolling if needed */
+  white-space: nowrap;
+  /* Prevents wrapping */
+  padding-bottom: 10px;
+  /* Extra space for scrollbar */
 }
 
 .skill-category {
