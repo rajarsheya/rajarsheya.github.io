@@ -313,19 +313,68 @@ img {
 
 
 /* ===== WORK =====*/
+.work {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
 .work__container {
-  row-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
 }
-.work__img {
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: 0.5rem;
-  overflow: hidden;
+
+.work__item {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
+
 .work__img img {
-  transition: 1s;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
 }
-.work__img img:hover {
-  transform: scale(1.1);
+
+.work__img:hover img {
+  transform: scale(1.05);
+}
+
+.work__title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #222;
+}
+
+.work__description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+video {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.work__link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+  transition: color 0.3s ease-in-out;
+}
+
+.work__link:hover {
+  color: #0056b3;
 }
 
 /* ===== ACHIEVEMENT =====*/
@@ -337,6 +386,26 @@ img {
     /* Add spacing between items */
     padding: 0;
     list-style: none;
+}
+
+.achievementlist li {
+  background: #f9f9f9;
+  /* Light background for contrast */
+  padding: 10px 15px;
+  border-radius: 8px;
+  /* Smooth rounded edges */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.achievementlist li::before {
+  content: "🏆";
+  /* Trophy emoji as a bullet */
+  margin-right: 10px;
 }
 
 /* ===== CONTACT =====*/
