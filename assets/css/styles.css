@@ -100,11 +100,11 @@ img {
 .bd-grid {
   max-width: 1024px;
   display: grid;
-
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
   margin: 0 auto; /* Center the grid */
   padding: 0  var(--mb-3); /* Add padding on both sides for spacing */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+ 
 }
 
 .l-header {
