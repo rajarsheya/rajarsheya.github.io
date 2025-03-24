@@ -115,10 +115,7 @@ img {
 }
 
 /*===== NAV =====*/
-.nav__menu {
-  display: flex;
-  justify-content: space-between;
-}
+
 .nav {
   height: var(--header-height);
   display: flex;
