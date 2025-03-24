@@ -100,8 +100,8 @@ img {
 .bd-grid {
   max-width: 1024px;
   display: grid;
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
+  margin-left: var(--mb-3);
+  margin-right: var(--mb-3);
   margin: 0 auto; /* Center the grid */
   padding: 0  var(--mb-3); /* Add padding on both sides for spacing */
  
@@ -385,7 +385,37 @@ img {
   font-size: 1rem;
   color: #666;
   margin-bottom: 10px;
+  max-height: 100px; /* Set a fixed height for the paragraph */
+  overflow: hidden; /* Hide content exceeding the fixed height */
+  line-height: 1.5;
+  transition: max-height 0.3s ease; /* Smooth transition */
 }
+
+.show-more-checkbox {
+  display: none; /* Hide the checkbox */
+}
+
+.show-more-label {
+  display: block;
+  background-color: #008CBA; /* Style the button */
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.show-more-checkbox:checked + .show-more-label {
+  background-color: #005f6a; /* Style the button when checked */
+}
+
+.show-more-checkbox:checked ~ .work__description {
+  max-height: none; /* Remove the height limit to show all content */
+}
+
 
 video {
   width: 100%;
