@@ -98,10 +98,12 @@ img {
 
 /*===== LAYOUT =====*/
 .bd-grid {
-  max-width: 1024px;
+
   display: grid;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .l-header {
