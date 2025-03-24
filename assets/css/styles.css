@@ -100,8 +100,6 @@ img {
 .bd-grid {
   max-width: 1024px;
   display: grid;
-  margin-left: var(--mb-6);
-  margin-right: var(--mb-6);
   margin: 0 auto; /* Center the grid */
   padding: 0  var(--mb-3); /* Add padding on both sides for spacing */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -386,36 +384,7 @@ img {
   font-size: 1rem;
   color: #666;
   margin-bottom: 10px;
-  max-height: 100px; /* Set a fixed height for the paragraph */
-  overflow: hidden; /* Hide content exceeding the fixed height */
-  line-height: 1.5;
-  transition: max-height 0.3s ease; /* Smooth transition */
 }
-
-.show-more-checkbox {
-  display: none; /* Hide the checkbox */
-}
-
-.show-more-label {
-  display: inline-block;
-  background-color: #85bff0; /* Style the button */
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 1rem;
-  margin-top: 10px;
-}
-
-.show-more-checkbox:checked ~ .work__description {
-  max-height: 2000px; /* Set a large max-height to allow full content visibility */
-}
-
-.show-more-checkbox:checked ~ .work__description + .show-more-label {
-  display: none; /* Hide the button once the text is fully expanded */
-}
-
 
 video {
   width: 100%;
@@ -682,5 +651,21 @@ video {
   }
   .home__img {
     width: 450px;
+  }
+}
+
+/* For medium-sized screens, like tablets (up to 768px wide) */
+@media (max-width: 768px) {
+  .bd-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the column width */
+    padding: 0 20px; /* Add padding on both sides for medium screens */
+  }
+}
+
+/* For smaller screens, like mobile phones (up to 480px wide) */
+@media (max-width: 480px) {
+  .bd-grid {
+    grid-template-columns: 1fr; /* Stack items in a single column */
+    padding: 0 10px; /* Add padding on both sides for mobile screens */
   }
 }
