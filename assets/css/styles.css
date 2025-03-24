@@ -100,11 +100,12 @@ img {
 .bd-grid {
   max-width: 1024px;
   display: grid;
-  margin-left: var(--mb-3);
-  margin-right: var(--mb-3);
+  margin-left: var(--mb-6);
+  margin-right: var(--mb-6);
   margin: 0 auto; /* Center the grid */
   padding: 0  var(--mb-3); /* Add padding on both sides for spacing */
- 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .l-header {
@@ -396,8 +397,8 @@ img {
 }
 
 .show-more-label {
-  display: block;
-  background-color: #008CBA; /* Style the button */
+  display: inline-block;
+  background-color: #85bff0; /* Style the button */
   color: white;
   padding: 10px 20px;
   text-align: center;
@@ -405,15 +406,14 @@ img {
   border-radius: 5px;
   font-size: 1rem;
   margin-top: 10px;
-  text-align: center;
-}
-
-.show-more-checkbox:checked + .show-more-label {
-  background-color: #005f6a; /* Style the button when checked */
 }
 
 .show-more-checkbox:checked ~ .work__description {
-  max-height: none; /* Remove the height limit to show all content */
+  max-height: 2000px; /* Set a large max-height to allow full content visibility */
+}
+
+.show-more-checkbox:checked ~ .work__description + .show-more-label {
+  display: none; /* Hide the button once the text is fully expanded */
 }
 
 
