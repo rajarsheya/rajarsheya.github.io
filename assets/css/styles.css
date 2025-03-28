@@ -237,6 +237,9 @@ img {
 }
 
 /*BUTTONS*/
+.home__buttons {
+  margin-top: 20px;
+}
 .button {
   display: inline-block;
   background-color: var(--first-color);
