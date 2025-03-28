@@ -93,7 +93,7 @@ img {
 .section-title-link {
   text-decoration: none;
   /* Remove underline */
-  color: inherit;
+  color: var(--first-color);
   /* Inherit text color */
 }
 
