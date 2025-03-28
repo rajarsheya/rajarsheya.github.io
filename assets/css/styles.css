@@ -90,6 +90,17 @@ img {
   top: 2rem;
   background-color: var(--first-color);
 }
+.section-title-link {
+  text-decoration: none;
+  /* Remove underline */
+  color: inherit;
+  /* Inherit text color */
+}
+
+.section-title-link:hover {
+  text-decoration: underline;
+  /* Optional: Show underline on hover */
+}
 
 .section {
   padding-top: 3rem;
