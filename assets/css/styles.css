@@ -123,24 +123,8 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background: linear-gradient(90deg, #3a5afecc, #1e40ffcc);
-  box-shadow: 0 4px 15px rgba(58, 90, 254, 0.4);
-  border-bottom: 3px solid hsl(224, 89%, 60%);
-  backdrop-filter: saturate(180%) blur(12px);
-  transition: background-color 0.5s ease, box-shadow 0.5s ease, border-bottom-color 0.5s ease;
-  animation: slideDownFadeIn 0.6s ease forwards;
-}
-
-@keyframes slideDownFadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  background-color:rgb(47, 31, 190);
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
 /*===== NAV =====*/
