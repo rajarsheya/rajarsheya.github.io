@@ -123,8 +123,34 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color:rgb(47, 31, 190);
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  background: linear-gradient(90deg, #3a5afe, #1e40ff);
+  box-shadow: 0 4px 12px rgba(30, 64, 255, 0.2);
+  animation: slideFade 0.6s ease-out;
+  color: white;
+  backdrop-filter: blur(10px) saturate(150%);
+  transition: background 0.4s, box-shadow 0.4s;
+}
+
+.l-header .nav__logo span,
+.l-header .nav__link {
+  color: #ffffff;
+}
+
+.l-header .nav__link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+@keyframes slideFade {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*===== NAV =====*/
