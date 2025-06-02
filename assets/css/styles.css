@@ -321,14 +321,11 @@ img {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: var(--first-color);
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.skills__card-title i {
-  color: var(--first-color);
-}
+
 .skills__list {
   list-style: disc;
   padding-left: 1.2rem;
