@@ -290,78 +290,54 @@ img {
 }
 
 /* ===== SKILLS =====*/
-.skills__container {
-  row-gap: 2rem;
-  text-align: center;
+/* ===== SKILLS ===== */
+.skills {
+  &__container {
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-top: 2rem;
+  }
+
+  &__card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+    }
+  }
+
+  &__card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--first-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    i {
+      color: var(--first-color);
+    }
+  }
+
+  &__list {
+    list-style: disc;
+    padding-left: 1.2rem;
+    line-height: 1.8rem;
+    font-size: 0.95rem;
+    color: #333;
+  }
 }
-
-.skills__subtitle {
-  margin-bottom: var(--mb-2);
-}
-
-/* Skills Section Styles */
-#skills {
-  background-color: #f7f7f7;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-  overflow: hidden;
-}
-
-#skills h2 {
-  margin-top: 0;
-  font-weight: bold;
-  color: #333;
-}
-
-/* Adjusting Skills Grid */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* Adjusts dynamically */
-  gap: 20px;
-  padding-bottom: 10px;
-}
-
-/* Individual Skill Category */
-.skill-category {
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  min-width: 250px; /* Ensures enough width for content */
-}
-
-.skill-category h3 {
-  margin-top: 0;
-  font-weight: bold;
-  color: #666;
-}
-
-.skill-category ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.skill-category li {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.skill-category li:before {
-  content: "•";
-  font-size: 18px;
-  color: #666;
-  margin-right: 10px;
-}
-
-
 
 /* ===== WORK =====*/
 .work {
