@@ -172,6 +172,15 @@ img{
     top: 2rem;
     background-color: var(--first-color);
 }
+.nav__logo-img {
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
 
 /*=== Show menu ===*/
 .show{
@@ -260,63 +269,55 @@ img{
     }
 }
 
-/* ===== SKILLS =====*/
-.skills{
-    &__container{
-        row-gap: 2rem;
+/* ===== SKILLS ===== */
+.skills {
+    &__container {
         text-align: center;
     }
-    &__subtitle{
-        margin-bottom: var(--mb-2);
+
+    &__grid {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        margin-top: 2rem;
     }
-    &__text{
-        margin-bottom: var(--mb-4);
+
+    &__card {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        text-align: left;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-6px);
+        }
     }
-    &__data{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        font-weight: var(--font-semi);
-        padding: .5rem 1rem;
-        margin-bottom: var(--mb-4);
-        border-radius: .5rem;
-        box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-    }
-    &__icon{
-        font-size: 2rem;
-        margin-right: var(--mb-2);
+
+    &__card-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
         color: var(--first-color);
-    }
-    &__names{
         display: flex;
         align-items: center;
+        gap: 0.5rem;
+
+        i {
+            color: var(--first-color);
+        }
     }
-    &__bar{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        background-color: var(--first-color);
-        height: .25rem;
-        border-radius: .5rem;
-        z-index: var(--z-back);
-    }
-    &__html{
-        width: 95%;
-    }
-    &__css{
-        width: 85%;
-    }
-    &__js{
-        width: 65%;
-    }
-    &__ux{
-        width: 85%;
-    }
-    &__img{
-        border-radius: .5rem;
+
+    &__list {
+        list-style: disc;
+        padding-left: 1.2rem;
+        line-height: 1.8rem;
+        font-size: 0.95rem;
+        color: #333;
     }
 }
+
 /* ===== WORK =====*/
 .work{
     &__container{
