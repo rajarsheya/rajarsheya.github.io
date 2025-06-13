@@ -644,6 +644,9 @@ video {
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
+  transition: background 0.4s ease-in-out, box-shadow 0.4s;
+  animation: gradientShift 10s ease infinite, slideFade 0.6s ease-out;
+  overflow: hidden;
 }
 .footer__title {
   font-size: 2rem;
