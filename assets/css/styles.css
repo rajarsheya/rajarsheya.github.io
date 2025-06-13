@@ -638,6 +638,7 @@ video {
 
 /* ===== FOOTER =====*/
 .footer {
+  background: linear-gradient(270deg, #3a5afe, #7acb24, #1e40ff);;
   background-color: #3a5afe;
   color: #fff;
   text-align: center;
