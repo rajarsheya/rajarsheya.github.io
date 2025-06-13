@@ -212,7 +212,7 @@ img {
   justify-content: center;
   animation: morph 8s infinite ease-in-out, float 6s infinite ease-in-out;
   overflow: hidden;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  
   transition: transform 0.3s ease;
 }
 
@@ -220,7 +220,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
+  mix-blend-mode: screen;
 }
 
 @keyframes morph {
