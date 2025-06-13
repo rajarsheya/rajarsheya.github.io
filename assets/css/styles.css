@@ -123,7 +123,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background: linear-gradient(270deg, #3a5afe, #7acb24, #1e40ff);
+  background: linear-gradient(270deg, --second-color, #7acb24, --first-color);
   background-size: 600% 600%;
   box-shadow: 0 4px 12px rgba(30, 64, 255, 0.2);
   color: white;
