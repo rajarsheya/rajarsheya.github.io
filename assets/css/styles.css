@@ -201,6 +201,58 @@ img {
   transition: transform 0.2s, text-shadow 0.3s;
 }
 
+/*=====BLOBS=====*/
+.blob-container {
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(135deg, #7f5af0, #2cb67d);
+  border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: morph 8s infinite ease-in-out, float 6s infinite ease-in-out;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.blob-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: screen;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%;
+  }
+
+  33% {
+    border-radius: 60% 40% 30% 70% / 55% 60% 40% 45%;
+  }
+
+  66% {
+    border-radius: 45% 55% 60% 40% / 50% 30% 70% 50%;
+  }
+
+  100% {
+    border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%;
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
 /*===== NAV =====*/
 
 .nav {
