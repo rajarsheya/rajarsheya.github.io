@@ -123,7 +123,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background: linear-gradient(270deg, #3a5afe, #7acb24, #1e40ff);
+  background: linear-gradient(270deg, #142daa, #7acb24, #142baa);
   background-size: 600% 600%;
   box-shadow: 0 4px 12px rgba(30, 64, 255, 0.2);
   color: white;
@@ -638,16 +638,72 @@ video {
 
 /* ===== FOOTER =====*/
 .footer {
-  background: linear-gradient(270deg, #3a5afe, #7acb24, #1e40ff);;
+  background: linear-gradient(270deg, #142daa, #7acb24, #142baa);
   background-color: #3a5afe;
-  color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
+  box-shadow: 0 4px 12px rgba(30, 64, 255, 0.2);
+  color: white;
+  backdrop-filter: blur(10px) saturate(150%);
   transition: background 0.4s ease-in-out, box-shadow 0.4s;
   animation: gradientShift 10s ease infinite, slideFade 0.6s ease-out;
   overflow: hidden;
 }
+/* Moving gradient background animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Entry animation */
+@keyframes slideFade {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Add sparkly animated dots using pseudo-element */
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: movePattern 30s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Subtle background pattern movement */
+@keyframes movePattern {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+
 .footer__title {
   font-size: 2rem;
   margin-bottom: var(--mb-4);
