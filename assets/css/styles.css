@@ -404,11 +404,25 @@ img {
   text-align: center;
   padding: 50px 20px;
   background: #60c4a9;
+  background-image:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(225deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(315deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
 }
 .about__container {
   row-gap: 2rem;
   text-align: center;
   background: #60c4a9;
+  background-image:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(225deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(315deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
 }
 .about__subtitle {
   margin-bottom: var(--mb-2);
@@ -471,6 +485,13 @@ img {
   text-align: center;
   padding: 50px 20px;
   background: #60c4a9;
+  background-image:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(225deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(315deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
 }
 
 .work__container {
