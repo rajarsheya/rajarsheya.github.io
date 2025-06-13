@@ -710,32 +710,6 @@ video {
   }
 }
 
-/* Add sparkly animated dots using pseudo-element */
-.footer::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 200%;
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 20px 20px;
-  animation: movePattern 30s linear infinite;
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* Subtle background pattern movement */
-@keyframes movePattern {
-  from {
-    transform: translate(0, 0);
-  }
-
-  to {
-    transform: translate(-50%, -50%);
-  }
-}
-
 .footer__title {
   font-size: 2rem;
   margin-bottom: var(--mb-4);
