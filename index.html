@@ -82,6 +82,31 @@
                     </svg>
                 </div>
 
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <mask id="blob-mask">
+                                <path id="blobPath" fill="#ffffff">
+                                    <animate attributeName="d" dur="10s" repeatCount="indefinite" values="
+                                                M426.5,316.5Q362,383,277,420.5Q192,458,130,394Q68,330,76,247Q84,164,149.5,109.5Q215,55,295,83.5Q375,112,427.5,181Q480,250,426.5,316.5Z;
+                                                M407,315.5Q362,381,276.5,411Q191,441,119.5,380.5Q48,320,67,233.5Q86,147,155,109.5Q224,72,297.5,94Q371,116,412.5,183Q454,250,407,315.5Z;
+                                                M426.5,316.5Q362,383,277,420.5Q192,458,130,394Q68,330,76,247Q84,164,149.5,109.5Q215,55,295,83.5Q375,112,427.5,181Q480,250,426.5,316.5Z
+                                              " />
+                                </path>
+                            </mask>
+                        </defs>
+                
+                        <!-- Blob Background (optional gradient fill) -->
+                        <path fill="url(#grad1)"
+                            d="M426.5,316.5Q362,383,277,420.5Q192,458,130,394Q68,330,76,247Q84,164,149.5,109.5Q215,55,295,83.5Q375,112,427.5,181Q480,250,426.5,316.5Z" />
+                
+                        <!-- Image inside blob -->
+                        <image class="home__blob-img" href="assets/img/AR-img-filter.png" x="0" y="0" width="500" height="500"
+                            mask="url(#blob-mask)" preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                </div>
+                  
+
                 
             </section>
 
