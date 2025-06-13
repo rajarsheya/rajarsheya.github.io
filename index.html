@@ -81,9 +81,9 @@
                         </g>
                     </svg>
                 </div>-->
-
+                
                 <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="home__blob" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <!-- Gradient Fill -->
                             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -91,25 +91,25 @@
                                 <stop offset="100%" style="stop-color:#2cb67d;stop-opacity:1" />
                             </linearGradient>
                 
-                            <!-- Morphing Blob Mask -->
+                            <!-- Morphing Mask -->
                             <mask id="blob-mask">
                                 <path id="blobPath" fill="white">
-                                    <animate attributeName="d" dur="8s" repeatCount="indefinite" values="
-                                                M422,310Q398,370,337,394Q276,418,219,400Q162,382,115,340Q68,298,66,236Q64,174,102,114Q140,54,211,66Q282,78,342,94Q402,110,424,180Q446,250,422,310Z;
-                                                M450,325Q420,400,340,430Q260,460,186,422Q112,384,92,312Q72,240,96,168Q120,96,200,92Q280,88,354,106Q428,124,450,197Q472,270,450,325Z;
-                                                M422,310Q398,370,337,394Q276,418,219,400Q162,382,115,340Q68,298,66,236Q64,174,102,114Q140,54,211,66Q282,78,342,94Q402,110,424,180Q446,250,422,310Z
+                                    <animate attributeName="d" dur="10s" repeatCount="indefinite" values="
+                                                M603.5,447Q565,544,465,585.5Q365,627,281.5,583Q198,539,139.5,469.5Q81,400,95.5,308.5Q110,217,178.5,139.5Q247,62,337.5,92.5Q428,123,507.5,162Q587,201,610.5,275.5Q634,350,603.5,447Z;
+                                                M618,421.5Q567,493,488,527.5Q409,562,316,578Q223,594,170.5,518Q118,442,117.5,359Q117,276,162.5,211Q208,146,289,120Q370,94,441.5,128Q513,162,573,223.5Q633,285,618,363.5Q603,442,618,421.5Z;
+                                                M603.5,447Q565,544,465,585.5Q365,627,281.5,583Q198,539,139.5,469.5Q81,400,95.5,308.5Q110,217,178.5,139.5Q247,62,337.5,92.5Q428,123,507.5,162Q587,201,610.5,275.5Q634,350,603.5,447Z
                                               " />
                                 </path>
                             </mask>
                         </defs>
                 
-                        <!-- Animated Blob Shape with Gradient -->
+                        <!-- Background Blob Shape with Gradient -->
                         <path fill="url(#grad1)"
-                            d="M422,310Q398,370,337,394Q276,418,219,400Q162,382,115,340Q68,298,66,236Q64,174,102,114Q140,54,211,66Q282,78,342,94Q402,110,424,180Q446,250,422,310Z">
+                            d="M603.5,447Q565,544,465,585.5Q365,627,281.5,583Q198,539,139.5,469.5Q81,400,95.5,308.5Q110,217,178.5,139.5Q247,62,337.5,92.5Q428,123,507.5,162Q587,201,610.5,275.5Q634,350,603.5,447Z">
                         </path>
                 
-                        <!-- Image inside Animated Blob -->
-                        <image class="home__blob-img" href="assets/img/AR-img-filter.png" x="0" y="0" width="600" height="600"
+                        <!-- Image Inside Blob Mask -->
+                        <image class="home__blob-img" href="assets/img/AR-img-filter.png" x="0" y="0" width="800" height="800"
                             preserveAspectRatio="xMidYMid slice" mask="url(#blob-mask)" />
                     </svg>
                 </div>                  
