@@ -203,8 +203,8 @@ img {
 
 /*=====BLOBS=====*/
 .blob-container {
-  width: 350px;
-  height: 350px;
+  width: clamp(200px, 30vw, 350px);
+  height: clamp(200px, 30vw, 350px);
   background: linear-gradient(135deg, #7f5af0, #2cb67d);
   border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%;
   display: flex;
@@ -213,44 +213,20 @@ img {
   animation: morph 8s infinite ease-in-out, float 6s infinite ease-in-out;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
+  /* optional: center horizontally */
+}
+
+.blob-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 .blob-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  mix-blend-mode: screen;
-}
-
-@keyframes morph {
-  0% {
-    border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%;
-  }
-
-  33% {
-    border-radius: 60% 40% 30% 70% / 55% 60% 40% 45%;
-  }
-
-  66% {
-    border-radius: 45% 55% 60% 40% / 50% 30% 70% 50%;
-  }
-
-  100% {
-    border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%;
-  }
-}
-
-@keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-12px);
-  }
 }
 
 /*===== NAV =====*/
