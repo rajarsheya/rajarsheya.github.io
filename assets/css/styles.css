@@ -376,6 +376,11 @@ img {
 }
 
 /* ===== ABOUT =====*/
+.about {
+  text-align: center;
+  padding: 50px 20px;
+  background: #60c4a9;
+}
 .about__container {
   row-gap: 2rem;
   text-align: center;
