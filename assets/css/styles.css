@@ -123,7 +123,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background: linear-gradient(270deg, --second-color, #7acb24, --first-color);
+  background: linear-gradient(270deg, #3a5afe, #7acb24, #1e40ff);
   background-size: 600% 600%;
   box-shadow: 0 4px 12px rgba(30, 64, 255, 0.2);
   color: white;
@@ -203,8 +203,8 @@ img {
 
 /*=====BLOBS=====*/
 .blob-container {
-  width: clamp(200px, 30vw, 350px);
-  height: clamp(200px, 30vw, 350px);
+  width: 350px;
+  height: 350px;
   background: linear-gradient(135deg, #7f5af0, #2cb67d);
   border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%;
   display: flex;
@@ -213,20 +213,44 @@ img {
   animation: morph 8s infinite ease-in-out, float 6s infinite ease-in-out;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 0 auto;
-  /* optional: center horizontally */
-}
-
-.blob-container:hover {
-  transform: scale(1.05);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
 }
 
 .blob-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  mix-blend-mode: screen;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%;
+  }
+
+  33% {
+    border-radius: 60% 40% 30% 70% / 55% 60% 40% 45%;
+  }
+
+  66% {
+    border-radius: 45% 55% 60% 40% / 50% 30% 70% 50%;
+  }
+
+  100% {
+    border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%;
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 /*===== NAV =====*/
@@ -384,6 +408,7 @@ img {
 .about__container {
   row-gap: 2rem;
   text-align: center;
+  background: #60c4a9;
 }
 .about__subtitle {
   margin-bottom: var(--mb-2);
@@ -613,7 +638,7 @@ video {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
+  background-color: #3a5afe;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
