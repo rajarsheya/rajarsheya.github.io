@@ -484,13 +484,14 @@ img {
 .work {
   text-align: center;
   padding: 50px 20px;
-  background-color: #d6f5e7;
-    /* light mint green */
-    background-image: url("data:image/svg+xml;utf8,
-   <svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' > <path fill='none' stroke='rgba(0,0,0,0.06)' stroke-width='1'
-        d='M0 50 Q 25 0 50 50 T 100 50 T 200 50' /> </svg>");
-   background-repeat: repeat;
-        background-size: 100px 100px;
+  background: #60c4a9;
+  background-image:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(225deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(315deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
 }
 
 .work__container {
