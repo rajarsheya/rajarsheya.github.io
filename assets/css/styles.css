@@ -220,7 +220,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  mix-blend-mode: screen;
+  mix-blend-mode: normal;
   backface-visibility: hidden;
   transform-style: preserve-3d;
   image-rendering: pixelated; /* try 'crisp-edges' or 'pixelated' if needed */
