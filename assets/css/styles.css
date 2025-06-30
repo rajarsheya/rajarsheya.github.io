@@ -123,8 +123,137 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color:white;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  background: linear-gradient(270deg, #142daa, #7acb24, #142baa);
+  background-size: 600% 600%;
+  box-shadow: 0 4px 12px rgba(30, 64, 255, 0.2);
+  color: white;
+  backdrop-filter: blur(10px) saturate(150%);
+  transition: background 0.4s ease-in-out, box-shadow 0.4s;
+  animation: gradientShift 10s ease infinite, slideFade 0.6s ease-out;
+  overflow: hidden;
+}
+
+/* Moving gradient background animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Entry animation */
+@keyframes slideFade {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Add sparkly animated dots using pseudo-element */
+.l-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: movePattern 30s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Subtle background pattern movement */
+@keyframes movePattern {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.l-header .nav__logo span,
+.l-header .nav__link {
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.l-header .nav__link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+  transform: scale(1.05);
+  transition: transform 0.2s, text-shadow 0.3s;
+}
+
+/*=====BLOBS=====*/
+.blob-container {
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(135deg, #7f5af0, #2cb67d);
+  border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: morph 8s infinite ease-in-out, float 6s infinite ease-in-out;
+  overflow: hidden;
+  will-change: border-radius, transform;
+  transition: transform 0.3s ease;
+}
+
+.blob-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: normal;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  image-rendering: pixelated; /* try 'crisp-edges' or 'pixelated' if needed */
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%;
+  }
+
+  33% {
+    border-radius: 60% 40% 30% 70% / 55% 60% 40% 45%;
+  }
+
+  66% {
+    border-radius: 45% 55% 60% 40% / 50% 30% 70% 50%;
+  }
+
+  100% {
+    border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%;
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 /*===== NAV =====*/
@@ -174,6 +303,15 @@ img {
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
+}
+.nav__logo-img {
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 /*Active menu*/
@@ -265,9 +403,29 @@ img {
 }
 
 /* ===== ABOUT =====*/
+.about {
+  text-align: center;
+  padding: 50px 20px;
+  background: #60c4a9;
+  background-image:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(225deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(315deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+}
 .about__container {
   row-gap: 2rem;
   text-align: center;
+  background: #60c4a9;
+  background-image:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(225deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(315deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
 }
 .about__subtitle {
   margin-bottom: var(--mb-2);
@@ -280,85 +438,63 @@ img {
   border-radius: 0.5rem;
 }
 
-/* ===== SKILLS =====*/
+/* ===== SKILLS ===== */
 .skills__container {
-  row-gap: 2rem;
   text-align: center;
 }
-
-.skills__subtitle {
-  margin-bottom: var(--mb-2);
-}
-
-/* Skills Section Styles */
-#skills {
-  background-color: #f7f7f7;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-  overflow: hidden;
-}
-
-#skills h2 {
-  margin-top: 0;
-  font-weight: bold;
-  color: #333;
-}
-
-/* Adjusting Skills Grid */
-.skills-grid {
+.skills__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* Adjusts dynamically */
-  gap: 20px;
-  padding-bottom: 10px;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  /* default to 1 column on small screens */
+  margin-top: 2rem;
 }
-
-/* Individual Skill Category */
-.skill-category {
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+@media (min-width: 768px) {
+  .skills__grid {
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns side by side on tablets and larger */
+  }
+}
+.skills__card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   text-align: left;
-  min-width: 250px; /* Ensures enough width for content */
+  transition: transform 0.3s ease;
 }
-
-.skill-category h3 {
-  margin-top: 0;
-  font-weight: bold;
-  color: #666;
+.skills__card:hover {
+  transform: translateY(-6px);
 }
-
-.skill-category ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.skill-category li {
-  margin-bottom: 10px;
+.skills__card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
-.skill-category li:before {
-  content: "•";
-  font-size: 18px;
-  color: #666;
-  margin-right: 10px;
+.skills__list {
+  list-style: disc;
+  padding-left: 1.2rem;
+  line-height: 1.8rem;
+  font-size: 0.95rem;
+  color: #333;
 }
-
-
 
 /* ===== WORK =====*/
 .work {
   text-align: center;
   padding: 50px 20px;
-  background: #f9f9f9;
+  background: #60c4a9;
+  background-image:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(225deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(315deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
 }
 
 .work__container {
@@ -505,6 +641,17 @@ video {
 }
 
 /* ===== CONTACT =====*/
+.contact{
+  padding: 50px 20px;
+  background: #60c4a9;
+  background-image:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(225deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+      linear-gradient(315deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+}
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
@@ -526,12 +673,46 @@ video {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
-  color: #fff;
+  background: linear-gradient(270deg, #142daa, #7acb24, #142baa);
+  background-color: #3a5afe;
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
+  box-shadow: 0 4px 12px rgba(30, 64, 255, 0.2);
+  color: white;
+  backdrop-filter: blur(10px) saturate(150%);
+  transition: background 0.4s ease-in-out, box-shadow 0.4s;
+  animation: gradientShift 10s ease infinite, slideFade 0.6s ease-out;
+  overflow: hidden;
 }
+/* Moving gradient background animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Entry animation */
+@keyframes slideFade {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .footer__title {
   font-size: 2rem;
   margin-bottom: var(--mb-4);

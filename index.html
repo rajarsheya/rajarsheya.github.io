@@ -9,6 +9,9 @@
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
+        <!-- =====FONTAWESOME===== -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
         <link rel="icon" type="image/png" href="assets/img/Icon - 64x64.png">
         <title>Website - Arsheya Raj</title>
     </head>
@@ -16,9 +19,10 @@
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Arsheya Raj</a>
-                </div>
+                <a href="#" class="nav__logo" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                    <img src="assets/img/AR_Logo_64x64.png" alt="Logo" class="nav__logo-img" style="display: block;">
+                    <span>Arsheya Raj</span>
+                </a>                
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -43,13 +47,13 @@
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Arsheya</span><br></h1>
                     <h3>
-                      CTO @ <a href="https://vaccinegenie.com/" target="_blank" class="vaccine-genie-link"> Vaccine Genie</a><br>
-                      M.S. in Computer Science @ University of Washington <br>
-                      B.E. in Inormation Technology @ BIT Mesra <br>
-                      Ex-ZS Associates <br>
-                      2 x ACM ICPC <br>
-                      Google Cloud Platform Certified <br>
-                      <!--Amazon Web Sservices Machine Learning Associate Certified <br>-->
+                        CTO @ <a href="https://vaccinegenie.com/" target="_blank" class="vaccine-genie-link"> Vaccine Genie</a><br>
+                        M.S. in Computer Science @ University of Washington <br>
+                        Ex-ZS Associates <br>
+                        B.E. in Inormation Technology @ BIT Mesra <br>
+                        2 x ACM ICPC <br>
+                        Google Cloud Platform Certified <br>
+                        <!--Amazon Web Services Machine Learning Associate Certified <br>-->
                     </h3>
 
                     <div class="home__social">
@@ -59,22 +63,18 @@
                         <a href="https://www.linkedin.com/in/rajarsheya/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
                         <a href="https://github.com/rajarsheya" class="home__social-icon"><i class='bx bxl-github' ></i></a>
                         <a href="mailto:raj94arsheya@gmail.com" class="home__social-icon"><i class='bx bxs-envelope'></i></a>
+                        <a href="https://www.credly.com/users/arsheya-raj" class="home__social-icon" target="_blank" rel="noopener">
+                            <i class='bx bx-badge-check'></i>
+                        </a>
                     </div>
 
                 </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/AR-img-filter.png"/>
-                        </g>
-                    </svg>
+                
+                <div class="blob-container">
+                    <img src="assets/img/AR-img_resized_407x612-removebg.png" alt="Profile" class="blob-img" />
                 </div>
-
+                             
+                  
                 
             </section>
 
@@ -109,53 +109,56 @@
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <div class="skills-grid">
-                            <div class="skill-category">
-                                <h3>Programming Languages</h3>
-                                <ul>
-                                    <li>C/C++</li>
-                                    <li>SQL/PostgreSQL</li>
-                                    <li>Python (Intermediate)</li>
-                                    <li>JavaScript</li>
-                                    <li>Java (Basic)</li>
-                                    <li>C# (Basic)</li>
-                                    <li>Shell Scripting</li>
-                                    <li>Swift</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h3>Development Frameworks</h3>
-                                <ul>
-                                    <li>NVIDIA CUDA</li>
-                                    <li>OpenCV</li>
-                                    <li>MATLAB</li>
-                                    <li>Unity3D</li>
-                                    <li>React.js</li>
-                                    <li>React Native</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h3>Cloud Platforms</h3>
-                                <ul>
-                                    <li>Amazon Web Services (AWS)</li>
-                                    <li>Google Cloud Platform (GCP)</li>
-                                </ul>
-                            </div>
+                <div class="skills__container bd-grid">
+                    <div class="skills__grid">
+            
+                        <div class="skills__card">
+                            <h3 class="skills__card-title"><i class="fas fa-code"></i> Programming Languages</h3>
+                            <ul class="skills__list">
+                                <li>C/C++</li>
+                                <li>SQL/PostgreSQL</li>
+                                <li>Python (Intermediate)</li>
+                                <li>JavaScript</li>
+                                <li>Java (Basic)</li>
+                                <li>C# (Basic)</li>
+                                <li>Shell Scripting</li>
+                                <li>Swift</li>
+                            </ul>
                         </div>
+            
+                        <div class="skills__card">
+                            <h3 class="skills__card-title"><i class="fas fa-tools"></i> Development Frameworks</h3>
+                            <ul class="skills__list">
+                                <li>NVIDIA CUDA</li>
+                                <li>OpenCV</li>
+                                <li>MATLAB</li>
+                                <li>Unity3D</li>
+                                <li>React.js</li>
+                                <li>React Native</li>
+                            </ul>
+                        </div>
+            
+                        <div class="skills__card">
+                            <h3 class="skills__card-title"><i class="fas fa-cloud"></i> Cloud Platforms</h3>
+                            <ul class="skills__list">
+                                <li>Amazon Web Services (AWS)</li>
+                                <li>Google Cloud Platform (GCP)</li>
+                            </ul>
+                        </div>
+            
                     </div>
                 </div>
-            </section>
+            </section>  
 
+            <!--===== WORK =====-->
             <section class="work section" id="projects">
                 <h2 class="section-title">
                     <a href="projects.html" class="section-title-link">My Projects/Thesis</a>
                 </h2>
             </section>
 
-            <section class=""achievement section" id="achievements">
+            <!--===== ACHIEVEMENTS =====-->
+            <section class="achievement section" id="achievements">
                 <h2 class="section-title">
                     <a href="achievements.html" class="section-title-link">My Achievements</a>
                 </h2>
