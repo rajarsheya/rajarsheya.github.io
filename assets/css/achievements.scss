@@ -1,0 +1,12 @@
+.achievementlist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.achievementlist li {
+  background: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,17 @@
+.work {
+  text-align: center;
+  padding: 50px 20px;
+  background: #60c4a9;
+}
+
+.work__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.work__item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
