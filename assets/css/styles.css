@@ -436,40 +436,37 @@ img {
   text-align: center;
 }
 
-/* Make grid auto-fill horizontal cards */
+/* ===== GRID (responsive horizontal cards) ===== */
 .skills__grid {
   display: grid;
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
   margin-top: 2rem;
-
-  /* Key change: auto-fit + minmax creates horizontal expansion */
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   align-items: stretch;
 }
 
-/* Skill cards */
+/* ===== CARD ===== */
 .skills__card {
-  background-color: white;
-  padding: 1.5rem;
+  background: white;
+  padding: 1.2rem;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  height: 100%;
   text-align: left;
-  transition: transform 0.3s ease;
 
-  /* makes cards feel more “horizontal block-like” */
-  min-height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-/* hover effect */
+/* card hover */
 .skills__card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
+  transition: 0.3s ease;
 }
 
-/* title */
+/* ===== TITLE ===== */
 .skills__card-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 1rem;
   display: flex;
@@ -477,13 +474,30 @@ img {
   gap: 0.5rem;
 }
 
-/* list */
+/* ===== HORIZONTAL SKILL PILLS ===== */
 .skills__list {
-  list-style: disc;
-  padding-left: 1.2rem;
-  line-height: 1.8rem;
-  font-size: 0.95rem;
-  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* each skill pill */
+.skills__list li {
+  background: #f3f4f6;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* optional hover effect for pills */
+.skills__list li:hover {
+  background: #e5e7eb;
+  cursor: default;
 }
 
 /*========================================================
