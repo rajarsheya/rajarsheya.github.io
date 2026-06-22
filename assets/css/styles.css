@@ -447,7 +447,8 @@ img {
 /* ===== GRID (responsive horizontal cards) ===== */
 .skills__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
   align-items: stretch;
@@ -902,5 +903,12 @@ video {
   .bd-grid {
     grid-template-columns: 1fr; /* Stack items in a single column */
     padding: 0 10px; /* Add padding on both sides for mobile screens */
+  }
+}
+
+/* Mobile: single column */
+@media screen and (max-width: 768px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
   }
 }
