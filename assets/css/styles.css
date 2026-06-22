@@ -457,7 +457,7 @@ img {
 /* ===== CARD ===== */
 
 .skills__card {
-  background: #4f759c;
+  background: #80a3c6;
   padding: 1.2rem;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -656,6 +656,7 @@ video {
 
 .achievementlist {
   display: flex;
+  background-color: #80a3c6;;
   flex-direction: column; /* Stack achievements vertically */
   gap: 12px; /* Slightly more spacing for better readability */
   padding: 0;
