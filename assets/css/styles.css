@@ -292,9 +292,17 @@ img {
   height: 40px;
   object-fit: contain;
   transition: transform 0.3s ease;
-
-  &:hover {
+}
+.nav__logo-img:hover {
     transform: scale(1.05);
+}
+.nav__toggle {
+  z-index: 10000;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    z-index: 9999;
   }
 }
 
