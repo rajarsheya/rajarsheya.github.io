@@ -451,7 +451,7 @@ img {
   grid-template-columns: repeat(4, minmax(300px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
-  align-items: stretch;
+  
 }
 
 /* ===== CARD ===== */
