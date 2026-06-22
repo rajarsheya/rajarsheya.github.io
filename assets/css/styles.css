@@ -457,7 +457,7 @@ img {
 /* ===== CARD ===== */
 
 .skills__card {
-  background: #80a3c6;
+  background: #a3c3e3;
   padding: 1.2rem;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -664,7 +664,7 @@ video {
 }
 
 .achievementlist li {
-  background: linear-gradient(135deg, #80a3c6, #f4f4f4); /* Subtle gradient for depth */
+  background: linear-gradient(135deg, #a3c3e3, #f4f4f4); /* Subtle gradient for depth */
   padding: 12px 18px;
   border-radius: 10px; /* Smooth rounded edges */
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
