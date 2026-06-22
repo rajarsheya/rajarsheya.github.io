@@ -513,6 +513,46 @@ img {
   WORK / PROJECTS SECTION
 ========================================================*/
 
+.thesis-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.thesis-container .work__item {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2rem;
+  text-align: left;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Thesis image */
+.thesis-container .work__img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  grid-row: span 6;
+}
+
+/* Title */
+.thesis-container .work__title {
+  margin-top: 0;
+}
+
+/* Videos */
+.thesis-container .video-container {
+  margin-top: 1rem;
+}
+
+/* Links */
+.thesis-container .project-links {
+  margin-top: 1rem;
+}
+
 .work {
   text-align: center;
   padding: 50px 20px;
@@ -947,4 +987,16 @@ video {
     height: 200px;
   }
 
+}
+
+/* Mobile */
+@media screen and (max-width:768px) {
+  .thesis-container .work__item {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .thesis-container .work__img {
+    height: 220px;
+  }
 }
