@@ -664,8 +664,7 @@ video {
 }
 
 .achievementlist li {
-  background: linear-gradient(135deg, #ffffff, #f4f4f4); /* Subtle gradient for depth */
-  background-color: #80a3c6;
+  background: linear-gradient(135deg, #80a3c6, #f4f4f4); /* Subtle gradient for depth */
   padding: 12px 18px;
   border-radius: 10px; /* Smooth rounded edges */
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
