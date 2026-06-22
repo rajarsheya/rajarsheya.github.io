@@ -656,7 +656,7 @@ video {
 
 .achievementlist {
   display: flex;
-  background-color: #80a3c6;;
+  background-color: #ffffff;
   flex-direction: column; /* Stack achievements vertically */
   gap: 12px; /* Slightly more spacing for better readability */
   padding: 2;
@@ -665,6 +665,7 @@ video {
 
 .achievementlist li {
   background: linear-gradient(135deg, #ffffff, #f4f4f4); /* Subtle gradient for depth */
+  background-color: #80a3c6;
   padding: 12px 18px;
   border-radius: 10px; /* Smooth rounded edges */
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
