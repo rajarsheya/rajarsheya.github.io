@@ -1,30 +1,39 @@
-/*===== GOOGLE FONTS =====*/
+/*========================================================
+  GOOGLE FONTS
+========================================================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
+
+
+/*========================================================
+  CSS VARIABLES
+========================================================*/
 :root {
   --header-height: 3rem;
   --font-semi: 600;
+
   /*===== Colores =====*/
-  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
-  /* HSL color mode */
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
-  /*===== Fuente y tipografia =====*/
+
+  /*===== Typography =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
-  /*===== Margenes =====*/
+
+  /*===== Margins =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
-  /*===== z index =====*/
+
+  /*===== z-index =====*/
   --z-back: -10;
   --z-fixed: 100;
 }
+
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
@@ -34,7 +43,10 @@
   }
 }
 
-/*===== BASE =====*/
+
+/*========================================================
+  BASE STYLES
+========================================================*/
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -70,7 +82,10 @@ img {
   display: block;
 }
 
-/*===== CLASS CSS ===== */
+
+/*========================================================
+  GENERAL CLASSES
+========================================================*/
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -79,6 +94,7 @@ img {
   margin-bottom: var(--mb-4);
   text-align: center;
 }
+
 .section-title::after {
   position: absolute;
   content: "";
@@ -90,16 +106,14 @@ img {
   top: 2rem;
   background-color: var(--first-color);
 }
+
 .section-title-link {
   text-decoration: none;
-  /* Remove underline */
   color: var(--first-color);
-  /* Inherit text color */
 }
 
 .section-title-link:hover {
   text-decoration: underline;
-  /* Optional: Show underline on hover */
 }
 
 .section {
@@ -107,16 +121,23 @@ img {
   padding-bottom: 2rem;
 }
 
-/*===== LAYOUT =====*/
+
+/*========================================================
+  LAYOUT GRID
+========================================================*/
 .bd-grid {
   max-width: 1024px;
   display: grid;
-  margin: 0 auto; /* Center the grid */
-  padding: 0  var(--mb-3); /* Add padding on both sides for spacing */
+  margin: 0 auto;
+  padding: 0 var(--mb-3);
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
+
+/*========================================================
+  HEADER / NAVBAR
+========================================================*/
 .l-header {
   width: 100%;
   position: fixed;
@@ -133,35 +154,17 @@ img {
   overflow: hidden;
 }
 
-/* Moving gradient background animation */
 @keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-/* Entry animation */
 @keyframes slideFade {
-  from {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
-/* Add sparkly animated dots using pseudo-element */
 .l-header::after {
   content: "";
   position: absolute;
@@ -169,22 +172,16 @@ img {
   left: 0;
   width: 200%;
   height: 200%;
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
   background-size: 20px 20px;
   animation: movePattern 30s linear infinite;
   z-index: 0;
   pointer-events: none;
 }
 
-/* Subtle background pattern movement */
 @keyframes movePattern {
-  from {
-    transform: translate(0, 0);
-  }
-
-  to {
-    transform: translate(-50%, -50%);
-  }
+  from { transform: translate(0, 0); }
+  to { transform: translate(-50%, -50%); }
 }
 
 .l-header .nav__logo span,
@@ -196,12 +193,15 @@ img {
 
 .l-header .nav__link:hover {
   color: #ffffff;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 8px rgba(255,255,255,0.9);
   transform: scale(1.05);
   transition: transform 0.2s, text-shadow 0.3s;
 }
 
-/*=====BLOBS=====*/
+
+/*========================================================
+  BLOB PROFILE SECTION
+========================================================*/
 .blob-container {
   width: 350px;
   height: 350px;
@@ -223,40 +223,24 @@ img {
   mix-blend-mode: normal;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  image-rendering: pixelated; /* try 'crisp-edges' or 'pixelated' if needed */
+  image-rendering: pixelated;
 }
 
 @keyframes morph {
-  0% {
-    border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%;
-  }
-
-  33% {
-    border-radius: 60% 40% 30% 70% / 55% 60% 40% 45%;
-  }
-
-  66% {
-    border-radius: 45% 55% 60% 40% / 50% 30% 70% 50%;
-  }
-
-  100% {
-    border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%;
-  }
+  0% { border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%; }
+  33% { border-radius: 60% 40% 30% 70% / 55% 60% 40% 45%; }
+  66% { border-radius: 45% 55% 60% 40% / 50% 30% 70% 50%; }
+  100% { border-radius: 33% 67% 66% 34% / 40% 55% 45% 60%; }
 }
 
 @keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-12px);
-  }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
 }
 
-/*===== NAV =====*/
+/*========================================================
+  NAVIGATION MENU
+========================================================*/
 
 .nav {
   height: var(--header-height);
@@ -343,7 +327,10 @@ img {
   text-decoration: underline;
 }
 
-/*===== HOME =====*/
+/*========================================================
+  HOME SECTION
+========================================================*/
+
 .home {
   position: relative;
   row-gap: 5rem;
@@ -402,7 +389,10 @@ img {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== ABOUT =====*/
+/*========================================================
+  ABOUT SECTION
+========================================================*/
+
 .about {
   text-align: center;
   padding: 50px 20px;
@@ -438,23 +428,26 @@ img {
   border-radius: 0.5rem;
 }
 
-/* ===== SKILLS ===== */
+/*========================================================
+  SKILLS SECTION
+========================================================*/
+
 .skills__container {
   text-align: center;
 }
+
+/* Make grid auto-fill horizontal cards */
 .skills__grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1fr;
-  /* default to 1 column on small screens */
   margin-top: 2rem;
+
+  /* Key change: auto-fit + minmax creates horizontal expansion */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: stretch;
 }
-@media (min-width: 768px) {
-  .skills__grid {
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 columns side by side on tablets and larger */
-  }
-}
+
+/* Skill cards */
 .skills__card {
   background-color: white;
   padding: 1.5rem;
@@ -462,10 +455,19 @@ img {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   text-align: left;
   transition: transform 0.3s ease;
+
+  /* makes cards feel more “horizontal block-like” */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
+/* hover effect */
 .skills__card:hover {
   transform: translateY(-6px);
 }
+
+/* title */
 .skills__card-title {
   font-size: 1.2rem;
   font-weight: 600;
@@ -475,6 +477,7 @@ img {
   gap: 0.5rem;
 }
 
+/* list */
 .skills__list {
   list-style: disc;
   padding-left: 1.2rem;
@@ -483,7 +486,10 @@ img {
   color: #333;
 }
 
-/* ===== WORK =====*/
+/*========================================================
+  WORK / PROJECTS SECTION
+========================================================*/
+
 .work {
   text-align: center;
   padding: 50px 20px;
@@ -608,7 +614,10 @@ video {
   transform: scale(1.1);
 }
 
-/* ===== ACHIEVEMENT =====*/
+/*========================================================
+  ACHIEVEMENTS SECTION
+========================================================*/
+
 .achievementlist {
   display: flex;
   flex-direction: column; /* Stack achievements vertically */
@@ -640,7 +649,10 @@ video {
   box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
 
-/* ===== CONTACT =====*/
+/*========================================================
+  CONTACT SECTION
+========================================================*/
+
 .contact{
   padding: 50px 20px;
   background: #60c4a9;
@@ -671,7 +683,10 @@ video {
   margin-left: auto;
 }
 
-/* ===== FOOTER =====*/
+/*========================================================
+  FOOTER
+========================================================*/
+
 .footer {
   background: linear-gradient(270deg, #142daa, #7acb24, #142baa);
   background-color: #3a5afe;
@@ -729,7 +744,10 @@ video {
   font-size: var(--smaller-font-size);
 }
 
-/* ===== MEDIA QUERIES=====*/
+/*========================================================
+  MEDIA QUERIES
+========================================================*/
+
 @media screen and (max-width: 320px) {
   .home {
     row-gap: 2rem;
