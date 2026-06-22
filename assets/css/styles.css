@@ -659,7 +659,7 @@ video {
   background-color: #80a3c6;;
   flex-direction: column; /* Stack achievements vertically */
   gap: 12px; /* Slightly more spacing for better readability */
-  padding: 0;
+  padding: 2;
   list-style: none;
 }
 
