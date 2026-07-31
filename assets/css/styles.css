@@ -872,6 +872,9 @@ img {
   height: auto;
   aspect-ratio: 16 / 9;
   border-radius: 10px;
+  border: 0;
+  display: block;
+  z-index: 1;
 }
 
 .project__contributors {
