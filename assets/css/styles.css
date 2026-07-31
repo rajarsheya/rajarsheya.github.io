@@ -856,6 +856,24 @@ img {
   border: 0;
 }
 
+.two-videos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  aspect-ratio: auto;
+  overflow: visible;
+  background: transparent;
+}
+
+.two-videos iframe {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+}
+
 .project__contributors {
   display: flex;
   flex-wrap: wrap;
@@ -1304,6 +1322,10 @@ img {
 
   .project-card__body {
     padding: 1rem;
+  }
+
+  .two-videos {
+    grid-template-columns: 1fr;
   }
 
   .contact__container {
