@@ -1,124 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0d0b">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-        <!-- =====FONTAWESOME===== -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="assets/img/Icon - 64x64.png">
+    <title>Website - Arsheya Raj</title>
+</head>
 
-        <link rel="icon" type="image/png" href="assets/img/Icon - 64x64.png">
-        <title>Website - Arsheya Raj</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <a href="#" class="nav__logo" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
-                    <img src="assets/img/AR_Logo_64x64.png" alt="Logo" class="nav__logo-img" style="display: block;">
-                    <span>Arsheya Raj</span>
-                </a>                
+<body>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="skills.html" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="achievements.html" class="nav__link">Achievements</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
+    <header class="l-header" id="site-header">
+        <nav class="nav bd-grid">
+            <a href="index.html" class="nav__logo" aria-label="Arsheya Raj home">
+                <img src="assets/img/AR_Logo_64x64.png" alt="AR logo" class="nav__logo-img">
+                <span>Arsheya Raj</span>
+            </a>
+
+            <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open navigation menu"
+                aria-controls="nav-menu" aria-expanded="false">
+                <i class="bx bx-menu"></i>
+            </button>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__menu-header">
+                    <span>Navigation</span>
+                    <button class="nav__close" id="nav-close" type="button" aria-label="Close navigation menu">
+                        <i class="bx bx-x"></i>
+                    </button>
                 </div>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="skills.html" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="achievements.html" class="nav__link">Achievements</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+    <main class="l-main">
+        <section class="hero section" id="home">
+            <div class="hero__grid bd-grid">
+                <div class="hero__content reveal">
+                    <p class="eyebrow"><span class="eyebrow__dot"></span> SOFTWARE ENGINEER · CLOUD · AI/ML</p>
+                    <h1 class="hero__title">
+                        Hi, I'm <span>Arsheya</span>.
+                        <br>
+                        I build <strong>scalable systems</strong>
+                        <br>
+                        for the real world.
+                    </h1>
+                    <p class="hero__summary">
+                        Software engineer focused on backend systems, cloud-native platforms,
+                        data engineering, machine learning, and high-performance computing.
+                    </p>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Arsheya</span><br></h1>
-                    <h3>
-                        <h3>Co-founder @ <a href="https://vaccinegenie.com/" target="_blank" class="vaccine-genie-link"> Vaccine Genie</a><br></h3>
-                        <h3>M.S. in Computer Science @ University of Washington <br></h3>
-                        <h3>Ex-ZS Associates <br></h3>
-                        <h3>B.E. in Information Technology @ BIT Mesra <br></h3>
-                        <h3>Google Cloud Platform Certified <br></h3>
-                        <h4>
-                            &nbsp;&nbsp;&nbsp;&nbsp;Google Cloud Certified - Professional Cloud Architect<br>
-                        </h4>
-                        <h4>
-                            &nbsp;&nbsp;&nbsp;&nbsp;Google Cloud Certified - Associate Cloud Engineer<br>
-                        </h4>
-                        <h4>
-                            &nbsp;&nbsp;&nbsp;&nbsp;Google Cloud Certified - Digital Leader Developer<br>
-                        </h4>
-                        <h3>Amazon Web Services Certified <br></h3>
-                        <h4>
-                            &nbsp;&nbsp;&nbsp;&nbsp;AWS Certified Solution Architect Engineer - Associate<br>
-                        </h4>
-                    </h3>
-
-                    <div class="home__social">
-                        <a href="/assets/Resume - Arsheya Raj.pdf" class="home__social-icon" download>
-                            <i class='bx bx-download'></i> Resume
-                        </a>
-                        <a href="https://www.linkedin.com/in/rajarsheya/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                        <a href="mailto:raj94arsheya@gmail.com" class="home__social-icon"><i class='bx bxs-envelope'></i></a>
-                        <a href="https://github.com/rajarsheya" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                        <a href="https://www.credly.com/users/arsheya-raj" class="home__social-icon" target="_blank" rel="noopener">
-                            <i class='bx bx-badge-check'></i>
-                        </a>
-                        <a href="https://www.cloudskillsboost.google/public_profiles/069c80ec-0017-4c99-89a7-9f9395e1b972"
-                            class="home__social-icon">
-                            <i class='bx bxl-google-cloud'></i>
-                        </a>
-                        <a href="https://g.dev/rajarsheya" class="home__social-icon"><i class='bx bxl-google' ></i></a>
+                    <div class="hero__facts">
+                        <div class="hero__fact">
+                            <span class="hero__fact-label">EDUCATION</span>
+                            <span>M.S. Computer Science & Software Engineering · University of Washington</span>
+                        </div>
+                        <div class="hero__fact">
+                            <span class="hero__fact-label">EXPERIENCE</span>
+                            <span>Co-founder @ <a href="https://vaccinegenie.com/" target="_blank"
+                                    rel="noopener">Vaccine Genie</a> · Ex-ZS Associates</span>
+                        </div>
+                        <div class="hero__fact">
+                            <span class="hero__fact-label">CERTIFICATIONS</span>
+                            <span>Google Cloud Certified · AWS Certified</span>
+                        </div>
                     </div>
 
+                    <div class="hero__actions">
+                        <a href="/assets/Resume - Arsheya Raj.pdf" class="button button--primary" download>
+                            <i class="bx bx-download"></i> Download Resume
+                        </a>
+                        <a href="projects.html" class="button button--ghost">Explore Projects <i
+                                class="bx bx-right-arrow-alt"></i></a>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/rajarsheya/" class="home__social-icon"
+                            aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                        <a href="mailto:raj94arsheya@gmail.com" class="home__social-icon" aria-label="Email"><i
+                                class="bx bxs-envelope"></i></a>
+                        <a href="https://github.com/rajarsheya" class="home__social-icon" aria-label="GitHub"
+                            target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+                        <a href="https://www.credly.com/users/arsheya-raj" class="home__social-icon" aria-label="Credly"
+                            target="_blank" rel="noopener"><i class="bx bx-badge-check"></i></a>
+                        <a href="https://www.cloudskillsboost.google/public_profiles/069c80ec-0017-4c99-89a7-9f9395e1b972"
+                            class="home__social-icon" aria-label="Google Cloud Skills Boost" target="_blank"
+                            rel="noopener"><i class="bx bxl-google-cloud"></i></a>
+                        <a href="https://g.dev/rajarsheya" class="home__social-icon"
+                            aria-label="Google Developer profile" target="_blank" rel="noopener"><i
+                                class="bx bxl-google"></i></a>
+                    </div>
                 </div>
-                
-                <div class="blob-container">
-                    <img src="assets/img/AR-img_resized_407x612-removebg.png" alt="Profile" class="blob-img" />
+
+                <div class="hero__visual reveal reveal--delay">
+                    <div class="hero__grid-lines"></div>
+                    <div class="hero__orbit hero__orbit--one"></div>
+                    <div class="hero__orbit hero__orbit--two"></div>
+                    <div class="hero__image-frame">
+                        <span class="hero__corner hero__corner--tl"></span>
+                        <span class="hero__corner hero__corner--br"></span>
+                        <img src="assets/img/AR-img_resized_407x612-removebg.png" alt="Portrait of Arsheya Raj"
+                            class="blob-img">
+                    </div>
+                    <div class="hero__terminal">
+                        <span class="terminal__dot"></span>
+                        <span class="terminal__dot"></span>
+                        <span class="terminal__dot"></span>
+                        <code>~/arsheya/building...</code>
+                    </div>
                 </div>
-
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                  <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Patna, Bihar, India</p>
-                  <!--<p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 72500 32288</p>-->
-                  <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: raj94arsheya@gmail.com</p>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/rajarsheya/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="mailto:raj94arsheya@gmail.com" class="footer__icon"><i class='bx bxs-envelope'></i></a>
-                <a href="https://github.com/rajarsheya" class="footer__icon"><i class='bx bxl-github' ></i></a>
             </div>
-            
-        </footer>
+        </section>
 
+        <section class="stats section">
+            <div class="stats__grid bd-grid">
+                <div class="stat reveal"><span>01</span><strong>Cloud</strong><small>GCP · AWS · Infrastructure</small>
+                </div>
+                <div class="stat reveal"><span>02</span><strong>AI / ML</strong><small>LLMs · CV · MLOps · RAG</small>
+                </div>
+                <div class="stat reveal"><span>03</span><strong>Systems</strong><small>Distributed · Backend ·
+                        APIs</small></div>
+                <div class="stat reveal"><span>04</span><strong>GPU</strong><small>CUDA · Parallel Computing</small>
+                </div>
+            </div>
+        </section>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <section class="contact section" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__intro reveal">
+                    <p class="eyebrow">CONTACT</p>
+                    <h2 class="section-heading">Let's connect.</h2>
+                    <p>Interested in software engineering, cloud, data, AI/ML, or high-performance computing?</p>
+                </div>
+                <div class="contact__details reveal reveal--delay">
+                    <a href="mailto:raj94arsheya@gmail.com" class="contact__item">
+                        <span class="contact__icon"><i class="fa fa-envelope"></i></span>
+                        <span><small>EMAIL</small>raj94arsheya@gmail.com</span>
+                    </a>
+                    <div class="contact__item">
+                        <span class="contact__icon"><i class="fa fa-location-dot"></i></span>
+                        <span><small>LOCATION</small>Patna, Bihar, India</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <footer class="footer">
+        <div class="footer__inner bd-grid">
+            <div>
+                <p class="footer__eyebrow">LET'S CONNECT</p>
+                <h2 class="footer__title">Build something meaningful.</h2>
+            </div>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/rajarsheya/" class="footer__icon" aria-label="LinkedIn"
+                    target="_blank" rel="noopener">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="mailto:raj94arsheya@gmail.com" class="footer__icon" aria-label="Email">
+                    <i class="bx bxs-envelope"></i>
+                </a>
+                <a href="https://github.com/rajarsheya" class="footer__icon" aria-label="GitHub" target="_blank"
+                    rel="noopener">
+                    <i class="bx bxl-github"></i>
+                </a>
+            </div>
+        </div>
+        <p class="footer__copy">© Arsheya Raj · Software Engineering · Cloud · AI/ML · GPU Computing</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>

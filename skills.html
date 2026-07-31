@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0d0b">
 
     <link rel="stylesheet" href="assets/css/styles.css">
-
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="icon" type="image/png" href="assets/img/Icon - 64x64.png">
     <title>Skills - Arsheya Raj</title>
@@ -15,185 +16,160 @@
 
 <body>
 
-<header class="l-header">
-    <nav class="nav bd-grid">
-        <a href="index.html" class="nav__logo" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
-            <img src="assets/img/AR_Logo_64x64.png" alt="Logo" class="nav__logo-img" style="display: block;">
-            <span>Arsheya Raj</span>
-        </a>               
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="skills.html" class="nav__link active-link">Skills</a></li>
-                <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
-                <li class="nav__item"><a href="achievements.html" class="nav__link">Achievements</a></li>
-            </ul>
+    <header class="l-header" id="site-header">
+        <nav class="nav bd-grid">
+            <a href="index.html" class="nav__logo" aria-label="Arsheya Raj home">
+                <img src="assets/img/AR_Logo_64x64.png" alt="AR logo" class="nav__logo-img">
+                <span>Arsheya Raj</span>
+            </a>
+
+            <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open navigation menu"
+                aria-controls="nav-menu" aria-expanded="false">
+                <i class="bx bx-menu"></i>
+            </button>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__menu-header">
+                    <span>Navigation</span>
+                    <button class="nav__close" id="nav-close" type="button" aria-label="Close navigation menu">
+                        <i class="bx bx-x"></i>
+                    </button>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="skills.html" class="nav__link active-link">Skills</a></li>
+                    <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="achievements.html" class="nav__link">Achievements</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <section class="page-hero section">
+            <div class="bd-grid">
+                <p class="eyebrow reveal"><span class="eyebrow__dot"></span> TECHNICAL STACK</p>
+                <h1 class="page-hero__title reveal">Skills & <span>Tools</span></h1>
+                <p class="page-hero__lead reveal reveal--delay">A practical stack spanning software engineering, cloud,
+                    data, AI, and GPU computing.</p>
+            </div>
+        </section>
+
+        <section class="skills section">
+            <div class="skills__grid bd-grid">
+                <article class="skills__card reveal">
+                    <div class="skills__card-top"><span class="skills__number">01</span><i
+                            class="fas fa-laptop-code"></i></div>
+                    <h2>Programming Languages</h2>
+                    <div class="skills__list">
+                        <span>C/C++</span><span>SQL</span><span>Python</span><span>JavaScript</span><span>Java
+                            (Basic)</span><span>C# (Basic)</span><span>Swift</span><span>Shell Scripting</span>
+                    </div>
+                </article>
+
+                <article class="skills__card reveal">
+                    <div class="skills__card-top"><span class="skills__number">02</span><i
+                            class="fas fa-project-diagram"></i></div>
+                    <h2>Software Engineering</h2>
+                    <div class="skills__list">
+                        <span>Data Structures & Algorithms</span><span>Object-Oriented Design</span><span>System
+                            Design</span><span>Distributed Systems</span><span>Microservices</span><span>REST
+                            APIs</span><span>Event-Driven Architecture</span><span>Operating
+                            Systems</span><span>Linux</span><span>Git</span>
+                    </div>
+                </article>
+
+                <article class="skills__card reveal">
+                    <div class="skills__card-top"><span class="skills__number">03</span><i class="fas fa-cloud"></i>
+                    </div>
+                    <h2>Cloud Platforms & Services</h2>
+                    <div class="skills__list">
+                        <span>Google Cloud Platform (GCP)</span><span>Amazon Web Services (AWS)</span><span>Compute
+                            Engine</span><span>Google Kubernetes Engine (GKE)</span><span>Cloud Run</span><span>Cloud
+                            Storage</span><span>Pub/Sub</span><span>Dataflow</span><span>BigQuery</span><span>Vertex
+                            AI</span><span>Gemini AI</span><span>API Gateway</span><span>IAM</span><span>Cloud
+                            Build</span><span>Cloud Monitoring</span><span>Cloud
+                            Logging</span><span>EC2</span><span>S3</span><span>RDS</span><span>Redshift</span>
+                    </div>
+                </article>
+
+                <article class="skills__card reveal">
+                    <div class="skills__card-top"><span class="skills__number">04</span><i class="fas fa-database"></i>
+                    </div>
+                    <h2>Databases & Data Engineering</h2>
+                    <div class="skills__list">
+                        <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Data
+                            Warehousing</span><span>Data Modeling</span><span>ETL / ELT Pipelines</span><span>Data
+                            Engineering</span><span>Hadoop</span><span>HDFS</span><span>MapReduce</span><span>Hive</span><span>Pig</span><span>Master
+                            Data Management (MDM)</span><span>Reltio</span>
+                    </div>
+                </article>
+
+                <article class="skills__card skills__card--wide reveal">
+                    <div class="skills__card-top"><span class="skills__number">05</span><i class="fas fa-brain"></i>
+                    </div>
+                    <h2>Machine Learning & AI</h2>
+                    <div class="skills__list">
+                        <span>PyTorch</span><span>TensorFlow</span><span>Scikit-Learn</span><span>NumPy</span><span>Pandas</span><span>OpenCV</span><span>Computer
+                            Vision</span><span>CNNs</span><span>RNNs</span><span>LSTMs</span><span>Feature
+                            Engineering</span><span>Model Evaluation</span><span>Model Deployment</span><span>Model
+                            Monitoring</span><span>Large Language Models (LLMs)</span><span>Generative
+                            AI</span><span>Retrieval-Augmented Generation (RAG)</span><span>Hugging Face
+                            Transformers</span><span>MLOps</span>
+                    </div>
+                </article>
+
+                <article class="skills__card reveal">
+                    <div class="skills__card-top"><span class="skills__number">06</span><i class="fas fa-server"></i>
+                    </div>
+                    <h2>DevOps & Infrastructure</h2>
+                    <div class="skills__list">
+                        <span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>CI/CD</span><span>GitHub
+                            Actions</span><span>Infrastructure as Code
+                            (IaC)</span><span>Containerization</span><span>React.js</span><span>React
+                            Native</span><span>Unity3D</span>
+                    </div>
+                </article>
+
+                <article class="skills__card reveal">
+                    <div class="skills__card-top"><span class="skills__number">07</span><i class="fas fa-microchip"></i>
+                    </div>
+                    <h2>High Performance Computing</h2>
+                    <div class="skills__list">
+                        <span>NVIDIA CUDA</span><span>GPU Programming</span><span>Parallel
+                            Computing</span><span>MATLAB</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner bd-grid">
+            <div>
+                <p class="footer__eyebrow">LET'S CONNECT</p>
+                <h2 class="footer__title">Build something meaningful.</h2>
+            </div>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/rajarsheya/" class="footer__icon" aria-label="LinkedIn"
+                    target="_blank" rel="noopener">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="mailto:raj94arsheya@gmail.com" class="footer__icon" aria-label="Email">
+                    <i class="bx bxs-envelope"></i>
+                </a>
+                <a href="https://github.com/rajarsheya" class="footer__icon" aria-label="GitHub" target="_blank"
+                    rel="noopener">
+                    <i class="bx bxl-github"></i>
+                </a>
+            </div>
         </div>
+        <p class="footer__copy">© Arsheya Raj · Software Engineering · Cloud · AI/ML · GPU Computing</p>
+    </footer>
 
-        <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bx-menu'></i>
-        </div>
-    </nav>
-</header>
-
-<main class="l-main">
-
-<section class="skills section">
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skills__container bd-grid">
-        <div class="skills__grid">
-
-            <!-- Programming Languages -->
-            <div class="skills__card">
-                <h3 class="skills__card-title"><i class="fas fa-laptop-code"></i> Programming Languages</h3>
-                <ul class="skills__list">
-                    <li>C/C++</li>
-                    <li>SQL</li>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>Java (Basic)</li>
-                    <li>C# (Basic)</li>
-                    <li>Swift</li>
-                    <li>Shell Scripting</li>
-                </u>
-            </div>
-
-            <!-- Software Engineering -->
-            <div class="skills__card">
-                <h3 class="skills__card-title"><i class="fas fa-project-diagram"></i> Software Engineering</h3>
-                <ul class="skills__list">
-                    <li>Data Structures & Algorithms</li>
-                    <li>Object-Oriented Design</li>
-                    <li>System Design</li>
-                    <li>Distributed Systems</li>
-                    <li>Microservices</li>
-                    <li>REST APIs</li>
-                    <li>Event-Driven Architecture</li>
-                    <li>Operating Systems</li>
-                    <li>Linux</li>
-                    <li>Git</li>
-                </ul>
-            </div>
-
-            <!-- Cloud -->
-            <div class="skills__card">
-                <h3 class="skills__card-title"><i class="fas fa-cloud"></i> Cloud Platforms & Services</h3>
-                <ul class="skills__list">
-                    <li>Google Cloud Platform (GCP)</li>
-                    <li>Amazon Web Services (AWS)</li>
-                    <li>Compute Engine</li>
-                    <li>Google Kubernetes Engine (GKE)</li>
-                    <li>Cloud Run</li>
-                    <li>Cloud Storage</li>
-                    <li>Pub/Sub</li>
-                    <li>Dataflow</li>
-                    <li>BigQuery</li>
-                    <li>Vertex AI</li>
-                    <li>Gemini AI</li>
-                    <li>API Gateway</li>
-                    <li>IAM</li>
-                    <li>Cloud Build</li>
-                    <li>Cloud Monitoring</li>
-                    <li>Cloud Logging</li>
-                    <li>EC2</li>
-                    <li>S3</li>
-                    <li>RDS</li>
-                    <li>Redshift</li>
-                </ul>
-            </div>
-
-            <!-- Data Engineering -->
-            <div class="skills__card">
-                <h3 class="skills__card-title"><i class="fas fa-database"></i> Databases & Data Engineering</h3>
-                <ul class="skills__list">
-                    <li>PostgreSQL</li>
-                    <li>MySQL</li>
-                    <li>MongoDB</li>
-                    <li>Data Warehousing</li>
-                    <li>Data Modeling</li>
-                    <li>ETL / ELT Pipelines</li>
-                    <li>Data Engineering</li>
-                    <li>Hadoop</li>
-                    <li>HDFS</li>
-                    <li>MapReduce</li>
-                    <li>Hive</li>
-                    <li>Pig</li>
-                    <li>Master Data Management (MDM)</li>
-                    <li>Reltio</li>
-                </ul>
-            </div>
-
-            <!-- Machine Learning & AI -->
-            <div class="skills__card">
-                <h3 class="skills__card-title"><i class="fas fa-brain"></i> Machine Learning & AI</h3>
-                <ul class="skills__list">
-                    <li>PyTorch</li>
-                    <li>TensorFlow</li>
-                    <li>Scikit-Learn</li>
-                    <li>NumPy</li>
-                    <li>Pandas</li>
-                    <li>OpenCV</li>
-                    <li>Computer Vision</li>
-                    <li>CNNs</li>
-                    <li>RNNs</li>
-                    <li>LSTMs</li>
-                    <li>Feature Engineering</li>
-                    <li>Model Evaluation</li>
-                    <li>Model Deployment</li>
-                    <li>Model Monitoring</li>
-                    <li>Large Language Models (LLMs)</li>
-                    <li>Generative AI</li>
-                    <li>Retrieval-Augmented Generation (RAG)</li>
-                    <li>Hugging Face Transformers</li>
-                    <li>MLOps</li>                            
-                </ul>
-            </div>
-
-            <!-- DevOps & Infrastructure -->
-            <div class="skills__card">
-                <h3 class="skills__card-title"><i class="fas fa-server"></i> DevOps & Infrastructure</h3>
-                <ul class="skills__list">
-                    <li>Docker</li>
-                    <li>Kubernetes</li>
-                    <li>Terraform</li>
-                    <li>CI/CD</li>
-                    <li>GitHub Actions</li>
-                    <li>Infrastructure as Code (IaC)</li>
-                    <li>Containerization</li>
-                    <li>React.js</li>
-                    <li>React Native</li>
-                    <li>Unity3D</li>
-                </ul>
-            </div>
-
-            <!-- High Performance Computing -->
-            <div class="skills__card">
-                <h3 class="skills__card-title"><i class="fas fa-microchip"></i> High Performance Computing</h3>
-                <ul class="skills__list">
-                    <li>NVIDIA CUDA</li>
-                    <li>GPU Programming</li>
-                    <li>Parallel Computing</li>
-                    <li>MATLAB</li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-</main>
-
-<footer class="footer">
-    <div class="footer__social">
-        <a href="https://www.linkedin.com/in/rajarsheya/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
-        <a href="mailto:raj94arsheya@gmail.com" class="footer__icon"><i class='bx bxs-envelope'></i></a>
-        <a href="https://github.com/rajarsheya" class="footer__icon"><i class='bx bxl-github'></i></a>
-    </div>
-</footer>
-
-<script src="assets/js/main.js"></script>
-
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

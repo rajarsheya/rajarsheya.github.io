@@ -4,228 +4,382 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+	<meta name="theme-color" content="#0a0d0b">
+
 	<link rel="stylesheet" href="assets/css/styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-	<title>Achievements - Arsheya Raj</title>
 	<link rel="icon" type="image/png" href="assets/img/Icon - 64x64.png">
+	<title>Achievements - Arsheya Raj</title>
 </head>
 
 <body>
-	<header class="l-header">
-    <nav class="nav bd-grid">
-        <a href="index.html" class="nav__logo" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
-            <img src="assets/img/AR_Logo_64x64.png" alt="Logo" class="nav__logo-img" style="display: block;">
-            <span>Arsheya Raj</span>
-        </a>               
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="skills.html" class="nav__link">Skills</a></li>
-                <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
-                <li class="nav__item"><a href="achievements.html" class="nav__link active-link">Achievements</a></li>
-            </ul>
-        </div>
 
-        <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bx-menu'></i>
-        </div>
-    </nav>
+	<header class="l-header" id="site-header">
+		<nav class="nav bd-grid">
+			<a href="index.html" class="nav__logo" aria-label="Arsheya Raj home">
+				<img src="assets/img/AR_Logo_64x64.png" alt="AR logo" class="nav__logo-img">
+				<span>Arsheya Raj</span>
+			</a>
+
+			<button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open navigation menu"
+				aria-controls="nav-menu" aria-expanded="false">
+				<i class="bx bx-menu"></i>
+			</button>
+
+			<div class="nav__menu" id="nav-menu">
+				<div class="nav__menu-header">
+					<span>Navigation</span>
+					<button class="nav__close" id="nav-close" type="button"
+						aria-label="Close navigation menu">
+						<i class="bx bx-x"></i>
+					</button>
+				</div>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+					<li class="nav__item"><a href="skills.html" class="nav__link">Skills</a></li>
+					<li class="nav__item"><a href="projects.html" class="nav__link">Projects</a>
+					</li>
+					<li class="nav__item"><a href="achievements.html"
+							class="nav__link active-link">Achievements</a></li>
+				</ul>
+			</div>
+		</nav>
 	</header>
 
 	<main class="l-main">
-		<!--===== Achievement =====-->
-		<section class="achievement section" id="achievements">
-			<h2 class="section-title">My Achievements</h2>
-			<ul class="achievementlist">
-				<li>
-					<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="bbbe54c7-0f43-4dc6-8072-dda0d78ed093"
-						data-share-badge-host="https://www.credly.com"></div>
-					<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-					<p style="margin-top: 15px;">
-						Google Cloud Certified Professional Cloud Architect, Issue Date: Feb 17 2026, Expiration Date: Feb 17, 2028
-					</p>
-				</li>
-				<li>
-					<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="00d2e2b0-d914-4ae9-ac61-ffdbe6ce841a"
-						data-share-badge-host="https://www.credly.com"></div>
-					<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-					<p style="margin-top: 15px;">
-						Google Cloud Certified Associate Cloud Engineer, Issue Date: Feb 17 2026, Expiration Date: Feb 17, 2029
-					</p>
-				</li>
-				<li>
-					<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="792cdc54-c115-4cd7-a1c2-4bd92dad6a71"
-						data-share-badge-host="https://www.credly.com">
-					</div>
-					<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-					<p style="margin-top: 15px;">
-						Amazon Web Services Certified Solutions Architect – Associate, Issue Date: 2 July 2025, Expiration Date:
-						2 July 2028
-					</p>
-				</li>
-				<li>
-					<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f30de8b4-b349-436d-9dd9-e81cfb5db0fd"
-						data-share-badge-host="https://www.credly.com"></div>
-					<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-					<p style="margin-top: 15px;">
-						Google Cloud Certified Cloud Digital Leader, Issue Date: 10 Nov 2022, Expiration Date: 12 Aug 2028
-					</p>
-				</li>
-				<li>
-					<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="a76c461b-9f43-46e6-bfb1-871d315f9a83"
-						data-share-badge-host="https://www.credly.com"></div>
-					<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-					<p style="margin-top: 15px;">
-						Verified International Academic Qualifications by WES ICAP on June 2022.
-					</p>
-				</li>
-				<li>Awarded Merit Certificate for RMO (Regional Mathematical Olympiad) - 2013 conducted by Bihar
-					Mathematical Society, Bhagalpur (Bihar) on behalf of National Board for Higher Mathematics
-					(NBHM),
-					Dept. of Atomic Energy, Govt. of India and qualified for the Indian National Mathematical
-					Olympiad
-					(INMO) - 2014.</li>
-				<li>Awarded Certificate of Achievement and Honorable mentions for ACM ICPC (Association for Computing
-					Machinery - International Collegiate Programming Contest) Onsite Round in 2016 and 2017.</li>
-				<li>Participated in SnackDown 2016 and Snackdown 2017 and Snackdown 2021 conducted by Codechef.</li>
-				<li>Awarded Certificate of Merit (Distinction awarded to ARSHEYA RAJ of DELHI PUBLIC SCHOOL In The
-					Senior Division)
-					in 2013 for Australian National Chemistry Quiz.</li>
-				<li>Participated in Big Data- Hadoop workshop at Birla Institute of Technology, Mesra on 15th - 17th
-					January 2016
-					organized by IBNC INDIA, IEEE and I-Medita Learning Solutions (P) Limited.</li>
-				<li>Participated in Loophole Ethical Hacking Workshop - Feb 2015 conducted by Kyrion Digital Securities
-					(P) Ltd.</li>
-				<li>Awarded Certificate in Network Management and Web Development by Netcamp Solutions (P) Ltd in Feb
-					2016.</li>
-				<li>Awarded Certificate of Appreciation for securing 1st position in Chain Reaction event hosted during
-					VertechX April 2015, annual technology festival of BIT Mesra.</li>
-				<li>Qualified for Google Code Jam Round 1 in 2016 and 2017, advancing to Round 2 in both years.</li>
-				<li>Awarded Certificate of Completion for successfully completing the Masterclass on "Building your own
-					Food Delivery App" as part of GUVI's Zen Class Masterclas series.</li>
-				<li>Awarded Certificate for accomplishments in Google Kick Start 2016.</li>
-				<li>Attended Amazon AI Conclave in Dec 2022 organized by AWS.</li>
-				<li>The NVIDIA Deep Learning Institute recognizes Arsheya Raj for the successful completion of "Disaster
-					Risk Monitoring Using
-					Satellite Imagery".</li>
-				<li>
-					<h3>Udemy Certifications:</h3>
-					<ul>
-						<li>Associate Generative AI (NCA-GENL) Exam Prep Course</li>
-						<li>AWS Certified Machine Learning Engineer – Associate: Hands-On</li>
-						<li>Google Certified Associate Cloud Engineer Certification (2021)</li>
-						<li>Google Cloud Professional Data Engineer: Get Certified (2021)</li>
-						<li>JavaScript and jQuery Basics for Beginners</li>
-						<li>Mac Clarity – Master Your Mac</li>
-						<li>Scrum Master Role & Scrum Master Certification</li>
-						<li>Shell Scripting: Discover How to Automate Command Line Tasks</li>
-						<li>Ultimate AWS Certified Solutions Architect – Associate (2025)</li>
-						
-					</ul>
-				</li>
-				<li>
-					<h3>Coursera Certifications:</h3>
-					<ul>
-						<li>Digital Transformation with Google Cloud</li>
-						<li>Foundations of Project Management</li>
-						<li>Google Cloud Big Data and Machine Learning Fundamentals</li>
-						<li>Serverless Data Processing with Dataflow: Foundations</li>
-					</ul>
-				</li>
-				<li>
-					<h3>AWS Skill Builder:</h3>
-					<ul>
-						<li>Amazon Bedrock: Getting Started</li>
-						<li>Introduction to Machine Learning – Art of the Possible</li>
-						<li>Planning a Machine Learning Project</li>
-					</ul>
-				</li>
-				<li>
-					<h3>LinkedIn Learning:</h3>
-					<ul>
-						<li>Advanced AI: Transformers for Computer Vision</li>
-						<li>AWS Certified Cloud Practitioner (CLF-C01) Cert Prep – Cloud Concepts</li>
-						<li>Build an iOS Application</li>
-						<li>Building Your First iOS 13 App</li>
-						<li>Cloud Architecture: Advanced Concepts</li>
-						<li>Driving Change and Anti-Racism</li>
-						<li>Getting Started with Google Cloud</li>
-						<li>GitHub for Data Scientists</li>
-						<li>Google Cloud Data and Storage Foundations</li>
-						<li>Google Cloud Foundations</li>
-						<li>Google Cloud Infrastructure and App Modernization</li>
-						<li>Google Cloud Security for Beginners: Tools and Services</li>
-						<li>Introduction to AWS for Non-Engineers: 1 Cloud Concepts</li>
-						<li>iOS 14 Development Essential Training</li>
-						<li>iOS App Development Essential Courses</li>
-						<li>Job Hunting for College Grads</li>
-						<li>Learning Google Cloud Security</li>
-						<li>Nano Tips for Negotiating Your Salary</li>
-						<li>NoSQL Essential Training</li>
-						<li>Scrum: The Basics</li>
-						<li>Software Architecture Patterns for Developers</li>
-						<li>SQL Tips and Tricks for Data Science</li>
-						<li>Turning an Internship into a Job</li>
-						<li>Understanding Google Cloud Fundamentals</li>
-						<li>Writing a Tech Resume</li>
-						<li>Effective Listening 2019</li>
-						<li>Tableau Essential Training</li>
-						<li>JavaScript Essential Training</li>
-					</ul>
-				</li>
-				<li>
-					<h3>Google Cloud Skill Boost:</h3>
-					<ul>
-						<li>Introduction to Generative AI</li>
-						<li>Introduction to Large Language Models</li>
-						<li>Introduction to Responsible AI</li>
-						<li>Generative AI Fundamentals</li>
-						<li>Innovating with Google Cloud Artificial Intelligence</li>
-						<li>Trust and Security with Google Cloud</li>
-						<li>Introduction to Gemini for Google Workspace</li>
-						<li>Gemini in Gmail, Docs, Slides, Sheets, Meet, and Drive</li>
-						<li>Preparing for Your Professional Data Engineer Journey</li>
-						<li>Machine Learning Operations (MLOps) for Generative AI</li>
-						<li>Serverless Data Processing with Dataflow: Foundations</li>
-						<li>Serverless Data Processing with Dataflow: Operations</li>
-						<li>Infrastructure and Application Modernization with Google Cloud</li>
-						<li>Innovating with Data and Google Cloud</li>
-						<li>Introduction to Digital Transformation with Google Cloud</li>
-						<li>Preparing for Your Associate Cloud Engineer Journey</li>
-						<li>Understanding Google Cloud Security and Operations</li>
-						<li>AI Infrastructure: Introduction to AI Hypercomputer</li>
-						<li>Professional Machine Learning Engineer Study Guide</li>
-					</ul>
-				</li>
-				<li>Mentor at UWB ACM HACKS AI Hackathon 2024</li>
-				<li>Mentor and Demo Day Guest at UWB ACM HACKS: SAVE THE WORLD 2025</li>				
-			</ul>
+		<section class="page-hero section">
+			<div class="bd-grid">
+				<p class="eyebrow reveal"><span class="eyebrow__dot"></span> MILESTONES</p>
+				<h1 class="page-hero__title reveal">Achievements & <span>Credentials</span></h1>
+				<p class="page-hero__lead reveal reveal--delay">Professional certifications, academic
+					milestones, competitions, workshops, and mentoring.</p>
+			</div>
 		</section>
 
+		<section class="achievement section" id="achievements">
+			<div class="achievement__grid bd-grid">
+
+				<article class="achievement-card achievement-card--cert reveal">
+					<div class="achievement-card__badge">
+						<div data-iframe-width="150" data-iframe-height="270"
+							data-share-badge-id="bbbe54c7-0f43-4dc6-8072-dda0d78ed093"
+							data-share-badge-host="https://www.credly.com"></div>
+					</div>
+					<div class="achievement-card__content">
+						<span class="achievement-card__number">01</span>
+						<p>Google Cloud Certified Professional Cloud Architect, Issue Date: Feb
+							17 2026, Expiration Date: Feb 17, 2028</p>
+					</div>
+				</article>
+
+				<article class="achievement-card achievement-card--cert reveal">
+					<div class="achievement-card__badge">
+						<div data-iframe-width="150" data-iframe-height="270"
+							data-share-badge-id="00d2e2b0-d914-4ae9-ac61-ffdbe6ce841a"
+							data-share-badge-host="https://www.credly.com"></div>
+					</div>
+					<div class="achievement-card__content">
+						<span class="achievement-card__number">02</span>
+						<p>Google Cloud Certified Associate Cloud Engineer, Issue Date: Feb 17
+							2026, Expiration Date: Feb 17, 2029</p>
+					</div>
+				</article>
+
+				<article class="achievement-card achievement-card--cert reveal">
+					<div class="achievement-card__badge">
+						<div data-iframe-width="150" data-iframe-height="270"
+							data-share-badge-id="792cdc54-c115-4cd7-a1c2-4bd92dad6a71"
+							data-share-badge-host="https://www.credly.com"></div>
+					</div>
+					<div class="achievement-card__content">
+						<span class="achievement-card__number">03</span>
+						<p>Amazon Web Services Certified Solutions Architect – Associate, Issue
+							Date: 2 July 2025, Expiration Date:
+							2 July 2028</p>
+					</div>
+				</article>
+
+				<article class="achievement-card achievement-card--cert reveal">
+					<div class="achievement-card__badge">
+						<div data-iframe-width="150" data-iframe-height="270"
+							data-share-badge-id="f30de8b4-b349-436d-9dd9-e81cfb5db0fd"
+							data-share-badge-host="https://www.credly.com"></div>
+					</div>
+					<div class="achievement-card__content">
+						<span class="achievement-card__number">04</span>
+						<p>Google Cloud Certified Cloud Digital Leader, Issue Date: 10 Nov 2022,
+							Expiration Date: 12 Aug 2028</p>
+					</div>
+				</article>
+
+				<article class="achievement-card achievement-card--cert reveal">
+					<div class="achievement-card__badge">
+						<div data-iframe-width="150" data-iframe-height="270"
+							data-share-badge-id="a76c461b-9f43-46e6-bfb1-871d315f9a83"
+							data-share-badge-host="https://www.credly.com"></div>
+					</div>
+					<div class="achievement-card__content">
+						<span class="achievement-card__number">05</span>
+						<p>Verified International Academic Qualifications by WES ICAP on June
+							2022.</p>
+					</div>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">06</span>
+					<p>Awarded Merit Certificate for RMO (Regional Mathematical Olympiad) - 2013
+						conducted by Bihar
+						Mathematical Society, Bhagalpur (Bihar) on behalf of National Board for
+						Higher Mathematics
+						(NBHM),
+						Dept. of Atomic Energy, Govt. of India and qualified for the Indian
+						National Mathematical
+						Olympiad
+						(INMO) - 2014.</p>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">07</span>
+					<p>Awarded Certificate of Achievement and Honorable mentions for ACM ICPC
+						(Association for Computing
+						Machinery - International Collegiate Programming Contest) Onsite Round
+						in 2016 and 2017.</p>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">08</span>
+					<p>Participated in SnackDown 2016 and Snackdown 2017 and Snackdown 2021
+						conducted by Codechef.</p>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">09</span>
+					<p>Awarded Certificate of Merit (Distinction awarded to ARSHEYA RAJ of DELHI
+						PUBLIC SCHOOL In The
+						Senior Division)
+						in 2013 for Australian National Chemistry Quiz.</p>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">10</span>
+					<p>Participated in Big Data- Hadoop workshop at Birla Institute of Technology,
+						Mesra on 15th - 17th
+						January 2016
+						organized by IBNC INDIA, IEEE and I-Medita Learning Solutions (P)
+						Limited.</p>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">11</span>
+					<p>Participated in Loophole Ethical Hacking Workshop - Feb 2015 conducted by
+						Kyrion Digital Securities
+						(P) Ltd.</p>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">12</span>
+					<p>Awarded Certificate in Network Management and Web Development by Netcamp
+						Solutions (P) Ltd in Feb
+						2016.</p>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">13</span>
+					<p>Awarded Certificate of Appreciation for securing 1st position in Chain
+						Reaction event hosted during
+						VertechX April 2015, annual technology festival of BIT Mesra.</p>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">14</span>
+					<p>Qualified for Google Code Jam Round 1 in 2016 and 2017, advancing to Round 2
+						in both years.</p>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">15</span>
+					<p>Awarded Certificate of Completion for successfully completing the Masterclass
+						on "Building your own
+						Food Delivery App" as part of GUVI's Zen Class Masterclas series.</p>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">16</span>
+					<p>Awarded Certificate for accomplishments in Google Kick Start 2016.</p>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">17</span>
+					<p>Attended Amazon AI Conclave in Dec 2022 organized by AWS.</p>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">18</span>
+					<p>The NVIDIA Deep Learning Institute recognizes Arsheya Raj for the successful
+						completion of "Disaster
+						Risk Monitoring Using
+						Satellite Imagery".</p>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">19</span>
+					<div>
+						<h3>Udemy Certifications:</h3>
+						<ul class="achievement-sublist">
+							<li>Associate Generative AI (NCA-GENL) Exam Prep Course</li>
+							<li>AWS Certified Machine Learning Engineer – Associate:
+								Hands-On</li>
+							<li>Google Certified Associate Cloud Engineer Certification
+								(2021)</li>
+							<li>Google Cloud Professional Data Engineer: Get Certified
+								(2021)</li>
+							<li>JavaScript and jQuery Basics for Beginners</li>
+							<li>Mac Clarity – Master Your Mac</li>
+							<li>Scrum Master Role & Scrum Master Certification</li>
+							<li>Shell Scripting: Discover How to Automate Command Line Tasks
+							</li>
+							<li>Ultimate AWS Certified Solutions Architect – Associate
+								(2025)</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">20</span>
+					<div>
+						<h3>Coursera Certifications:</h3>
+						<ul class="achievement-sublist">
+							<li>Digital Transformation with Google Cloud</li>
+							<li>Foundations of Project Management</li>
+							<li>Google Cloud Big Data and Machine Learning Fundamentals</li>
+							<li>Serverless Data Processing with Dataflow: Foundations</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">21</span>
+					<div>
+						<h3>AWS Skill Builder:</h3>
+						<ul class="achievement-sublist">
+							<li>Amazon Bedrock: Getting Started</li>
+							<li>Introduction to Machine Learning – Art of the Possible</li>
+							<li>Planning a Machine Learning Project</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">22</span>
+					<div>
+						<h3>LinkedIn Learning:</h3>
+						<ul class="achievement-sublist">
+							<li>Advanced AI: Transformers for Computer Vision</li>
+							<li>AWS Certified Cloud Practitioner (CLF-C01) Cert Prep – Cloud
+								Concepts</li>
+							<li>Build an iOS Application</li>
+							<li>Building Your First iOS 13 App</li>
+							<li>Cloud Architecture: Advanced Concepts</li>
+							<li>Driving Change and Anti-Racism</li>
+							<li>Getting Started with Google Cloud</li>
+							<li>GitHub for Data Scientists</li>
+							<li>Google Cloud Data and Storage Foundations</li>
+							<li>Google Cloud Foundations</li>
+							<li>Google Cloud Infrastructure and App Modernization</li>
+							<li>Google Cloud Security for Beginners: Tools and Services</li>
+							<li>Introduction to AWS for Non-Engineers: 1 Cloud Concepts</li>
+							<li>iOS 14 Development Essential Training</li>
+							<li>iOS App Development Essential Courses</li>
+							<li>Job Hunting for College Grads</li>
+							<li>Learning Google Cloud Security</li>
+							<li>Nano Tips for Negotiating Your Salary</li>
+							<li>NoSQL Essential Training</li>
+							<li>Scrum: The Basics</li>
+							<li>Software Architecture Patterns for Developers</li>
+							<li>SQL Tips and Tricks for Data Science</li>
+							<li>Turning an Internship into a Job</li>
+							<li>Understanding Google Cloud Fundamentals</li>
+							<li>Writing a Tech Resume</li>
+							<li>Effective Listening 2019</li>
+							<li>Tableau Essential Training</li>
+							<li>JavaScript Essential Training</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">23</span>
+					<div>
+						<h3>Google Cloud Skill Boost:</h3>
+						<ul class="achievement-sublist">
+							<li>Introduction to Generative AI</li>
+							<li>Introduction to Large Language Models</li>
+							<li>Introduction to Responsible AI</li>
+							<li>Generative AI Fundamentals</li>
+							<li>Innovating with Google Cloud Artificial Intelligence</li>
+							<li>Trust and Security with Google Cloud</li>
+							<li>Introduction to Gemini for Google Workspace</li>
+							<li>Gemini in Gmail, Docs, Slides, Sheets, Meet, and Drive</li>
+							<li>Preparing for Your Professional Data Engineer Journey</li>
+							<li>Machine Learning Operations (MLOps) for Generative AI</li>
+							<li>Serverless Data Processing with Dataflow: Foundations</li>
+							<li>Serverless Data Processing with Dataflow: Operations</li>
+							<li>Infrastructure and Application Modernization with Google
+								Cloud</li>
+							<li>Innovating with Data and Google Cloud</li>
+							<li>Introduction to Digital Transformation with Google Cloud
+							</li>
+							<li>Preparing for Your Associate Cloud Engineer Journey</li>
+							<li>Understanding Google Cloud Security and Operations</li>
+							<li>AI Infrastructure: Introduction to AI Hypercomputer</li>
+							<li>Professional Machine Learning Engineer Study Guide</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">24</span>
+					<p>Mentor at UWB ACM HACKS AI Hackathon 2024</p>
+				</article>
+
+				<article class="achievement-card reveal">
+					<span class="achievement-card__number">25</span>
+					<p>Mentor and Demo Day Guest at UWB ACM HACKS: SAVE THE WORLD 2025</p>
+				</article>
+
+			</div>
+		</section>
 	</main>
+	<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
-	<!--===== FOOTER =====-->
 	<footer class="footer">
-		<div class="footer__social">
-			<a href="https://www.linkedin.com/in/rajarsheya/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
-			<a href="mailto:raj94arsheya@gmail.com" class="footer__icon"><i class='bx bxs-envelope'></i></a>
-			<a href="https://github.com/rajarsheya" class="footer__icon"><i class='bx bxl-github'></i></a>
+		<div class="footer__inner bd-grid">
+			<div>
+				<p class="footer__eyebrow">LET'S CONNECT</p>
+				<h2 class="footer__title">Build something meaningful.</h2>
+			</div>
+			<div class="footer__social">
+				<a href="https://www.linkedin.com/in/rajarsheya/" class="footer__icon"
+					aria-label="LinkedIn" target="_blank" rel="noopener">
+					<i class="bx bxl-linkedin"></i>
+				</a>
+				<a href="mailto:raj94arsheya@gmail.com" class="footer__icon" aria-label="Email">
+					<i class="bx bxs-envelope"></i>
+				</a>
+				<a href="https://github.com/rajarsheya" class="footer__icon" aria-label="GitHub"
+					target="_blank" rel="noopener">
+					<i class="bx bxl-github"></i>
+				</a>
+			</div>
 		</div>
-
+		<p class="footer__copy">© Arsheya Raj · Software Engineering · Cloud · AI/ML · GPU Computing</p>
 	</footer>
 
-
-	<!--===== SCROLL REVEAL =====-->
 	<script src="https://unpkg.com/scrollreveal"></script>
-
-	<!--===== MAIN JS =====-->
 	<script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

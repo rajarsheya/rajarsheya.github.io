@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0d0b">
 
     <link rel="stylesheet" href="assets/css/styles.css">
-
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="icon" type="image/png" href="assets/img/Icon - 64x64.png">
     <title>About - Arsheya Raj</title>
@@ -15,83 +16,116 @@
 
 <body>
 
-<header class="l-header">
-    <nav class="nav bd-grid">
-        <a href="index.html" class="nav__logo" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
-            <img src="assets/img/AR_Logo_64x64.png" alt="Logo" class="nav__logo-img" style="display: block;">
-            <span>Arsheya Raj</span>
-        </a>               
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="about.html" class="nav__link active-link">About</a></li>
-                <li class="nav__item"><a href="skills.html" class="nav__link">Skills</a></li>
-                <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
-                <li class="nav__item"><a href="achievements.html" class="nav__link">Achievements</a></li>
-            </ul>
+    <header class="l-header" id="site-header">
+        <nav class="nav bd-grid">
+            <a href="index.html" class="nav__logo" aria-label="Arsheya Raj home">
+                <img src="assets/img/AR_Logo_64x64.png" alt="AR logo" class="nav__logo-img">
+                <span>Arsheya Raj</span>
+            </a>
+
+            <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open navigation menu"
+                aria-controls="nav-menu" aria-expanded="false">
+                <i class="bx bx-menu"></i>
+            </button>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__menu-header">
+                    <span>Navigation</span>
+                    <button class="nav__close" id="nav-close" type="button" aria-label="Close navigation menu">
+                        <i class="bx bx-x"></i>
+                    </button>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link active-link">About</a></li>
+                    <li class="nav__item"><a href="skills.html" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="achievements.html" class="nav__link">Achievements</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <section class="page-hero section">
+            <div class="bd-grid">
+                <p class="eyebrow reveal"><span class="eyebrow__dot"></span> PROFILE</p>
+                <h1 class="page-hero__title reveal">About <span>Me</span></h1>
+                <p class="page-hero__lead reveal reveal--delay">Engineer by training. Builder by nature. Curious about
+                    systems that scale.</p>
+            </div>
+        </section>
+
+        <section class="about section">
+            <div class="about__container bd-grid">
+                <div class="about__media reveal">
+                    <div class="about__image-frame">
+                        <img src="assets/img/AR-about-filter.jpg" alt="Arsheya Raj" class="about__image">
+                    </div>
+                    <div class="about__label"><span></span> ENGINEERING · AI · CLOUD</div>
+                </div>
+
+                <div class="about__content reveal reveal--delay">
+                    <p class="eyebrow">WHO I AM</p>
+                    <h2 class="section-heading">Hi Everyone.</h2>
+                    <p class="about__text">
+                        I'm Arsheya Raj, a Master's graduate in Computer Science & Software Engineering
+                        from the University of Washington, with a background in designing and
+                        building scalable software systems, distributed applications, and cloud-native
+                        platforms.
+                    </p>
+                    <p class="about__text">
+                        I specialize in backend engineering, cloud infrastructure, data engineering,
+                        and machine learning systems. My experience includes building production-grade
+                        healthcare platforms using Python, REST APIs, microservices, Google Cloud
+                        Platform, AI technologies, and healthcare interoperability standards such as
+                        FHIR/HL7.
+                    </p>
+                    <p class="about__text">
+                        I have worked across startups, enterprise environments, and research projects,
+                        including serving as Co-founder & CTO at Vaccine Genie, developing enterprise
+                        data solutions at ZS Associates, and building cross-platform applications as
+                        a software engineer.
+                    </p>
+                    <p class="about__text">
+                        I am interested in Software Development Engineer, Data Engineer, Machine
+                        Learning Engineer, and Cloud Engineer opportunities where I can design
+                        reliable, scalable, and high-performance systems.
+                    </p>
+                    <div class="about__tags">
+                        <span>Backend Engineering</span><span>Cloud</span><span>Data Engineering</span>
+                        <span>Machine Learning</span><span>Distributed Systems</span><span>GPU Computing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner bd-grid">
+            <div>
+                <p class="footer__eyebrow">LET'S CONNECT</p>
+                <h2 class="footer__title">Build something meaningful.</h2>
+            </div>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/rajarsheya/" class="footer__icon" aria-label="LinkedIn"
+                    target="_blank" rel="noopener">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="mailto:raj94arsheya@gmail.com" class="footer__icon" aria-label="Email">
+                    <i class="bx bxs-envelope"></i>
+                </a>
+                <a href="https://github.com/rajarsheya" class="footer__icon" aria-label="GitHub" target="_blank"
+                    rel="noopener">
+                    <i class="bx bxl-github"></i>
+                </a>
+            </div>
         </div>
+        <p class="footer__copy">© Arsheya Raj · Software Engineering · Cloud · AI/ML · GPU Computing</p>
+    </footer>
 
-        <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bx-menu'></i>
-        </div>
-    </nav>
-</header>
-
-<main class="l-main">
-
-<section class="about section">
-    <h2 class="section-title">About Me</h2>
-
-    <div class="about__container bd-grid">
-        <div class="about__img">
-            <img src="assets/img/AR-about-filter.jpg" alt="">
-        </div>
-
-        <div>
-            <h2 class="about__subtitle">Hi Everyone</h2>
-
-            <p class="about__text">
-                I'm Arsheya Raj, a Master's graduate in Computer Science & Software Engineering
-                from the University of Washington, with a background in designing and
-                building scalable software systems, distributed applications, and cloud-native
-                platforms.
-
-                <br><br>
-
-                I specialize in backend engineering, cloud infrastructure, data engineering,
-                and machine learning systems. My experience includes building production-grade
-                healthcare platforms using Python, REST APIs, microservices, Google Cloud
-                Platform, AI technologies, and healthcare interoperability standards such as
-                FHIR/HL7.
-
-                <br><br>
-
-                I have worked across startups, enterprise environments, and research projects,
-                including serving as Co-founder & CTO at Vaccine Genie, developing enterprise
-                data solutions at ZS Associates, and building cross-platform applications as
-                a software engineer.
-
-                <br><br>
-
-                I am interested in Software Development Engineer, Data Engineer, Machine
-                Learning Engineer, and Cloud Engineer opportunities where I can design
-                reliable, scalable, and high-performance systems.
-            </p>
-        </div>
-    </div>
-</section>
-
-</main>
-
-<footer class="footer">
-    <div class="footer__social">
-        <a href="https://www.linkedin.com/in/rajarsheya/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
-        <a href="mailto:raj94arsheya@gmail.com" class="footer__icon"><i class='bx bxs-envelope'></i></a>
-        <a href="https://github.com/rajarsheya" class="footer__icon"><i class='bx bxl-github'></i></a>
-    </div>
-</footer>
-
-<script src="assets/js/main.js"></script>
-
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
