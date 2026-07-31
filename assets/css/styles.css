@@ -839,20 +839,21 @@ img {
 }
 
 .video-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  position: relative;
   width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #050705;
   margin-top: .2rem;
 }
 
 .video-container iframe {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
+  height: 100%;
   border: 0;
-  border-radius: 10px;
-  display: block;
 }
 
 .project__contributors {
@@ -1305,10 +1306,6 @@ img {
     padding: 1rem;
   }
 
-  .video-container {
-    grid-template-columns: 1fr;
-  }
-
   .contact__container {
     gap: 2rem;
   }
@@ -1317,7 +1314,6 @@ img {
     align-items: flex-start;
     flex-direction: column;
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 1050px) {
