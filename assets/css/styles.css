@@ -1,5 +1,11 @@
+/* =========================================================
+   FONTS
+   ========================================================= */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
 
+/* =========================================================
+   DESIGN TOKENS / CSS VARIABLES
+   ========================================================= */
 :root {
   --header-height: 4.5rem;
   --font-body: "Inter", sans-serif;
@@ -24,6 +30,9 @@
   --z-fixed: 1000;
 }
 
+/* =========================================================
+   GLOBAL RESET & BASE STYLES
+   ========================================================= */
 *,
 *::before,
 *::after {
@@ -92,6 +101,9 @@ img {
   display: block;
 }
 
+/* =========================================================
+   LAYOUT UTILITIES & SHARED SECTION STYLES
+   ========================================================= */
 .bd-grid {
   width: min(1180px, calc(100% - 40px));
   margin-inline: auto;
@@ -147,6 +159,9 @@ img {
   visibility: visible;
 }
 
+/* =========================================================
+   HEADER & DESKTOP NAVIGATION
+   ========================================================= */
 .l-header {
   position: fixed;
   inset: 0 0 auto;
@@ -252,7 +267,9 @@ img {
   display: none;
 }
 
-/* HERO */
+/* =========================================================
+   HOME / HERO SECTION
+   ========================================================= */
 .hero {
   min-height: calc(100vh - var(--header-height));
   display: flex;
@@ -395,6 +412,7 @@ img {
   transform: translateY(-3px);
 }
 
+/* Hero visual / portrait area */
 .hero__visual {
   min-height: 560px;
   position: relative;
@@ -403,6 +421,7 @@ img {
   animation: heroVisualIn 1s cubic-bezier(.2, .8, .2, 1) .12s both;
 }
 
+/* Technical grid background */
 .hero__grid-lines {
   position: absolute;
   inset: 6% 2%;
@@ -414,6 +433,7 @@ img {
   mask-image: radial-gradient(circle at center, black 15%, transparent 72%);
 }
 
+/* Decorative orbit rings */
 .hero__orbit {
   position: absolute;
   border: 1px solid rgba(118, 185, 0, .16);
@@ -450,6 +470,7 @@ img {
   }
 }
 
+/* Portrait frame */
 .hero__image-frame {
   position: relative;
   z-index: 2;
@@ -487,6 +508,7 @@ img {
   filter: saturate(1) contrast(1.05);
 }
 
+/* Portrait frame corner accents */
 .hero__corner {
   position: absolute;
   width: 34px;
@@ -509,6 +531,7 @@ img {
   border-bottom: 2px solid;
 }
 
+/* Developer terminal label */
 .hero__terminal {
   position: absolute;
   z-index: 4;
@@ -540,7 +563,9 @@ img {
   background: var(--green);
 }
 
-/* SUBTLE HERO ANIMATIONS */
+/* =========================================================
+   SUBTLE HERO ANIMATIONS
+   ========================================================= */
 @keyframes heroContentIn {
   from {
     opacity: 0;
@@ -590,6 +615,9 @@ img {
   }
 }
 
+/* =========================================================
+   HOMEPAGE STATS
+   ========================================================= */
 .stats {
   padding: 0 0 6rem;
 }
@@ -637,7 +665,9 @@ img {
   font-size: .78rem;
 }
 
-/* PAGE HERO */
+/* =========================================================
+   INNER-PAGE HERO / PAGE HEADER
+   ========================================================= */
 .page-hero {
   padding: 6rem 0 2rem;
   border-bottom: 1px solid var(--line-soft);
@@ -659,7 +689,9 @@ img {
   font-size: 1.05rem;
 }
 
-/* ABOUT */
+/* =========================================================
+   ABOUT SECTION
+   ========================================================= */
 .about {
   padding-top: 4rem;
 }
@@ -737,7 +769,9 @@ img {
   font-size: .76rem;
 }
 
-/* SKILLS */
+/* =========================================================
+   SKILLS SECTION
+   ========================================================= */
 .skills {
   padding-top: 4rem;
 }
@@ -780,6 +814,7 @@ img {
   grid-column: span 2;
 }
 
+/* Skill card header / icon */
 .skills__card-top {
   display: flex;
   align-items: center;
@@ -799,6 +834,7 @@ img {
   font: 700 1.15rem var(--font-display);
 }
 
+/* Skill tags */
 .skills__list {
   display: flex;
   flex-wrap: wrap;
@@ -823,21 +859,26 @@ img {
   transform: translateY(-2px);
 }
 
-/* PROJECTS */
+/* =========================================================
+   PROJECTS SECTION
+   ========================================================= */
 .work {
   padding-top: 4rem;
 }
 
+/* Section title / intro */
 .section-header {
   margin-bottom: 2rem;
 }
 
+/* Project card grid */
 .work__container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
+/* Standard project card */
 .project-card {
   display: flex;
   flex-direction: column;
@@ -855,6 +896,7 @@ img {
   box-shadow: 0 25px 60px rgba(0, 0, 0, .3);
 }
 
+/* Project image / media */
 .project-card__media {
   position: relative;
   aspect-ratio: 16 / 9;
@@ -883,6 +925,7 @@ img {
   filter: saturate(1);
 }
 
+/* Project number badge */
 .project-card__index {
   position: absolute;
   left: .85rem;
@@ -896,6 +939,7 @@ img {
   font: 700 .65rem monospace;
 }
 
+/* Project text/content area */
 .project-card__body {
   display: flex;
   flex-direction: column;
@@ -904,17 +948,20 @@ img {
   flex: 1;
 }
 
+/* Project title */
 .work__title {
   font: 700 1.08rem/1.25 var(--font-display);
   color: #f1f4f1;
 }
 
+/* Project description */
 .work__description {
   color: #929d94;
   font-size: .83rem;
   line-height: 1.7;
 }
 
+/* Single embedded video */
 .video-container {
   position: relative;
   width: 100%;
@@ -931,27 +978,6 @@ img {
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-.two-videos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  aspect-ratio: auto;
-  overflow: visible;
-  background: transparent;
-}
-
-.two-videos iframe {
-  position: relative;
-  inset: auto;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  border-radius: 10px;
-  border: 0;
-  display: block;
-  z-index: 1;
 }
 
 /* =========================================================
@@ -1151,6 +1177,7 @@ img {
   color: var(--green-bright);
 }
 
+/* Project action links */
 .project-links {
   display: flex;
   flex-wrap: wrap;
@@ -1189,17 +1216,21 @@ img {
   background: var(--green-bright);
 }
 
-/* ACHIEVEMENTS */
+/* =========================================================
+   ACHIEVEMENTS & CERTIFICATIONS
+   ========================================================= */
 .achievement {
   padding-top: 4rem;
 }
 
+/* Achievement card grid */
 .achievement__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 
+/* Achievement cards */
 .achievement-card {
   position: relative;
   display: grid;
@@ -1266,7 +1297,9 @@ img {
   color: var(--green);
 }
 
-/* CONTACT */
+/* =========================================================
+   CONTACT SECTION
+   ========================================================= */
 .contact {
   border-top: 1px solid var(--line-soft);
   border-bottom: 1px solid var(--line-soft);
@@ -1332,7 +1365,9 @@ img {
   transform: scale(1.05);
 }
 
-/* FOOTER */
+/* =========================================================
+   FOOTER
+   ========================================================= */
 .footer {
   padding: 4rem 0 1.5rem;
   background: #050705;
@@ -1390,7 +1425,9 @@ img {
   font-size: .7rem;
 }
 
-/* MOBILE NAV */
+/* =========================================================
+   MOBILE / SMALL-SCREEN STYLES
+   ========================================================= */
 @media (max-width: 767px) {
   :root {
     --header-height: 4.1rem;
@@ -1593,6 +1630,9 @@ img {
   }
 }
 
+/* =========================================================
+   TABLET / MEDIUM-SCREEN STYLES
+   ========================================================= */
 @media (min-width: 768px) and (max-width: 1050px) {
   .bd-grid {
     width: min(100% - 44px, 1000px);
@@ -1619,6 +1659,9 @@ img {
   }
 }
 
+/* =========================================================
+   VERY SMALL MOBILE SCREENS
+   ========================================================= */
 @media (max-width: 430px) {
   .hero__actions {
     flex-direction: column;
@@ -1668,6 +1711,9 @@ img {
   }
 }
 
+/* =========================================================
+   ACCESSIBILITY: REDUCED MOTION
+   ========================================================= */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
