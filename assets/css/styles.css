@@ -179,6 +179,41 @@ img {
   box-shadow: 0 12px 40px rgba(0, 0, 0, .28);
 }
 
+/* Subtle animated color accent along the navbar */
+.l-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(118, 185, 0, 0.15) 20%,
+      var(--green-bright) 50%,
+      rgba(118, 185, 0, 0.15) 80%,
+      transparent 100%);
+  background-size: 200% 100%;
+  animation: navbarGlow 5s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes navbarGlow {
+  0% {
+    background-position: 200% 0;
+    opacity: .45;
+  }
+
+  50% {
+    opacity: .9;
+  }
+
+  100% {
+    background-position: -200% 0;
+    opacity: .45;
+  }
+}
+
 .nav {
   height: 100%;
   display: flex;
