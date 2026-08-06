@@ -969,7 +969,7 @@ img {
 .thesis-card__header {
   display: grid;
   grid-template-columns: minmax(300px, .85fr) minmax(0, 1.15fr);
-  gap: 2rem;
+  gap: 3rem;
   padding: 1.5rem;
   align-items: center;
 }
