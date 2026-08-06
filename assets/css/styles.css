@@ -179,38 +179,73 @@ img {
   box-shadow: 0 12px 40px rgba(0, 0, 0, .28);
 }
 
-/* Subtle animated color accent along the navbar */
-.l-header::after {
+/* =========================================================
+   SUBTLE NAVBAR ANIMATION
+   ========================================================= */
+
+.l-header::before {
   content: "";
   position: absolute;
   left: 0;
+  right: 0;
   bottom: -1px;
-  width: 100%;
-  height: 2px;
+  height: 1px;
   background: linear-gradient(90deg,
-      transparent 0%,
-      rgba(118, 185, 0, 0.15) 20%,
-      var(--green-bright) 50%,
-      rgba(118, 185, 0, 0.15) 80%,
-      transparent 100%);
-  background-size: 200% 100%;
-  animation: navbarGlow 5s linear infinite;
+      transparent,
+      rgba(118, 185, 0, .35),
+      var(--green-bright),
+      rgba(118, 185, 0, .35),
+      transparent);
+  opacity: .7;
+}
+
+.l-header::after {
+  content: "";
+  position: absolute;
+  left: -15%;
+  bottom: -2px;
+  width: 30%;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--green-bright);
+  box-shadow:
+    0 0 8px rgba(118, 185, 0, .65),
+    0 0 20px rgba(118, 185, 0, .35);
+  opacity: .75;
+  animation: navbarScanner 6s ease-in-out infinite;
   pointer-events: none;
 }
 
-@keyframes navbarGlow {
+@keyframes navbarScanner {
   0% {
-    background-position: 200% 0;
-    opacity: .45;
+    left: -15%;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: .65;
+  }
+
+  45% {
+    opacity: .85;
   }
 
   50% {
-    opacity: .9;
+    left: 85%;
+    opacity: .85;
+  }
+
+  55% {
+    opacity: .65;
+  }
+
+  65% {
+    opacity: 0;
   }
 
   100% {
-    background-position: -200% 0;
-    opacity: .45;
+    left: 100%;
+    opacity: 0;
   }
 }
 
