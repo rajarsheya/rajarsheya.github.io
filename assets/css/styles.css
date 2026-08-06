@@ -954,6 +954,176 @@ img {
   z-index: 1;
 }
 
+/* =========================================================
+   FEATURED MASTER'S THESIS
+   ========================================================= */
+
+.thesis-card {
+  grid-column: 1 / -1;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Thesis introduction */
+
+.thesis-card__header {
+  display: grid;
+  grid-template-columns: minmax(300px, .85fr) minmax(0, 1.15fr);
+  gap: 2rem;
+  padding: 1.5rem;
+  align-items: center;
+}
+
+.thesis-card__header .project-card__media {
+  height: 100%;
+  min-height: 280px;
+}
+
+.thesis-card__intro {
+  padding: .5rem .5rem .5rem 0;
+}
+
+.thesis-card__eyebrow {
+  margin: 0 0 .75rem;
+  color: var(--green-bright);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+
+.thesis-card__intro .work__title {
+  margin-bottom: 1rem;
+}
+
+/* Research demos */
+
+.thesis-card__demos {
+  margin: 0 1.5rem;
+  padding: 1.25rem 0 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.thesis-card__demos-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.thesis-card__demos-header .thesis-card__eyebrow {
+  margin: 0;
+}
+
+.thesis-card__demos-header>span {
+  font-size: .62rem;
+  letter-spacing: .12em;
+  opacity: .45;
+}
+
+/* Two-video layout */
+
+.thesis-card__videos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.thesis-video {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #050705;
+}
+
+.thesis-video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+}
+
+.thesis-video>span {
+  display: block;
+  padding: .65rem .8rem;
+  border-top: 1px solid var(--line);
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: var(--muted);
+}
+
+/* Video hover */
+
+.thesis-video {
+  transition:
+    transform .25s ease,
+    border-color .25s ease,
+    box-shadow .25s ease;
+}
+
+.thesis-video:hover {
+  transform: translateY(-3px);
+  border-color: rgba(118, 185, 0, .35);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .18);
+}
+
+/* Thesis links */
+
+.thesis-card>.project-links {
+  margin: 0 1.5rem 1.5rem;
+}
+
+/* =========================================================
+   MASTER'S THESIS RESPONSIVE
+   ========================================================= */
+
+@media screen and (max-width: 900px) {
+
+  .thesis-card__header {
+    grid-template-columns: 1fr;
+  }
+
+  .thesis-card__header .project-card__media {
+    min-height: 240px;
+  }
+
+  .thesis-card__intro {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .thesis-card__header {
+    padding: 1rem;
+    gap: 1.25rem;
+  }
+
+  .thesis-card__header .project-card__media {
+    min-height: 200px;
+  }
+
+  .thesis-card__demos {
+    margin: 0 1rem;
+  }
+
+  .thesis-card__videos {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .thesis-card>.project-links {
+    margin: 0 1rem 1rem;
+  }
+
+  .thesis-card__demos-header {
+    align-items: flex-start;
+    gap: .5rem;
+  }
+}
+
 .project__contributors {
   display: flex;
   flex-wrap: wrap;
