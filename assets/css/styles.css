@@ -170,7 +170,7 @@ img {
   background:
       linear-gradient(rgba(118, 185, 0, .025) 1px, transparent 1px),
       linear-gradient(90deg, rgba(118, 185, 0, .025) 1px, transparent 1px),
-      rgba(48, 78, 70, 0.92);
+      rgba(118, 185, 0, 0.35);
   background-size: 24px 24px;
   border-bottom: 1px solid rgba(118, 185, 0, .13);
   backdrop-filter: blur(18px) saturate(130%);
