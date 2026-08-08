@@ -170,7 +170,7 @@ img {
   background:
       linear-gradient(rgba(118, 185, 0, .025) 1px, transparent 1px),
       linear-gradient(90deg, rgba(118, 185, 0, .025) 1px, transparent 1px),
-      rgba(7, 9, 7, .88);
+      rgba(34, 150, 171, 0.88);
   background-size: 24px 24px;
   border-bottom: 1px solid rgba(118, 185, 0, .13);
   backdrop-filter: blur(18px) saturate(130%);
@@ -182,10 +182,6 @@ img {
   border-color: rgba(118, 185, 0, .25);
   box-shadow: 0 12px 40px rgba(0, 0, 0, .28);
 }
-
-/* =========================================================
-   SUBTLE NAVBAR ANIMATION
-   ========================================================= */
 
 /* =========================================================
    NAVBAR ACCENT
