@@ -167,7 +167,11 @@ img {
   inset: 0 0 auto;
   height: var(--header-height);
   z-index: var(--z-fixed);
-  background: rgba(7, 9, 7, .82);
+  background:
+      linear-gradient(rgba(118, 185, 0, .025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(118, 185, 0, .025) 1px, transparent 1px),
+      rgba(7, 9, 7, .88);
+  background-size: 24px 24px;
   border-bottom: 1px solid rgba(118, 185, 0, .13);
   backdrop-filter: blur(18px) saturate(130%);
   transition: background .3s ease, box-shadow .3s ease, border-color .3s ease;
@@ -295,7 +299,7 @@ img {
   position: relative;
   display: block;
   padding: .55rem .8rem;
-  color: #bac1ba;
+  color: #c1c9c1;
   font-size: .88rem;
   font-weight: 600;
   transition: color .2s ease;
@@ -316,7 +320,7 @@ img {
 
 .nav__link:hover,
 .nav__link.active-link {
-  color: #fff;
+  color: var(--green-bright);
 }
 
 .nav__link:hover::after,
